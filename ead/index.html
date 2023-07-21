@@ -38,7 +38,7 @@ img.emoji {
 <link rel="stylesheet" id="elementor-icons-css" href="./../wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.20.0" media="all">
 <link rel="stylesheet" id="swiper-css" href="./../wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5" media="all">
 <link rel="stylesheet" id="elementor-global-css" href="./../wp-content/uploads/elementor/css/global.css?ver=1689959679" media="all">
-<link rel="stylesheet" id="elementor-post-750-css" href="./../wp-content/uploads/elementor/css/post-750.css?ver=1689959741" media="all">
+<link rel="stylesheet" id="elementor-post-750-css" href="./../wp-content/uploads/elementor/css/post-750.css?ver=1689974137" media="all">
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMarcellus%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMarcellus+SC%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.2.2" media="all">
 <link rel="stylesheet" id="elementor-icons-shared-0-css" href="./../wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3" media="all">
 <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="./../wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3" media="all">
@@ -69,10 +69,155 @@ img.emoji {
 <link rel="icon" href="./../wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg" sizes="192x192">
 <link rel="apple-touch-icon" href="./../wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg">
 <meta name="msapplication-TileImage" content="./../wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg">
-		<style id="wp-custom-css">/* DESKTOP */
+		<style id="wp-custom-css">/* ACCORDION */
+#faq {
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  text-align: center;
+}
+
+#faq ul {
+  text-align: left;
+}
+
+#faq .transition, #faq p, #faq ul li i:before, #faq ul li i:after {
+  transition: all 0.3s;
+}
+
+#faq .no-select, #faq h2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+#faq h2 {
+  color: #000;
+  font-family: "Marcellus SC", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+  text-align: left;
+  padding: 30px 60px 0 15px;
+  text-transform: none;
+  letter-spacing: 1px;
+  display: block;
+  margin: 0;
+  cursor: pointer;
+  transition: .2s;
+}
+
+#faq p {
+  color: rgb(83, 83, 83);
+  text-align: left;
+  color: rgb(83, 83, 83);
+  font-family: Marcellus, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+  position: relative;
+  overflow: hidden;
+  contain: layout;
+  display: inline-block;
+  opacity: 1;
+  transform: translate(0, 0);
+  padding: 10px 20px 0 20px;
+  transition: .3s opacity, .6s max-height;
+  hyphens: auto;
+  z-index: 2;
+}
+
+#faq ul {
+  list-style: none;
+  perspective: 900;
+  padding: 0;
+  margin: 0;
+}
+
+#faq ul li {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  background: #fff;
+  box-shadow: 0 3px 10px -2px rgba(0,0,0,0.1);
+  -webkit-tap-highlight-color: transparent;
+}
+
+#faq ul li + li {
+  margin-top: 15px;
+}
+
+#faq ul li:last-of-type {
+  padding-bottom: 0;
+}
+
+#faq ul li i {
+  position: absolute;
+  transform: translate(-6px, 0);
+  margin-top: 35px;
+  right: 15px;
+}
+
+#faq ul li i:before, #faq ul li i:after {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  width: 3px;
+  height: 9px;
+}
+
+#faq ul li i:before {
+  transform: translate(-2px, 0) rotate(45deg);
+}
+
+#faq ul li i:after {
+  transform: translate(2px, 0) rotate(-45deg);
+}
+
+#faq ul li input[type=checkbox] {
+  position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  touch-action: manipulation;
+}
+
+#faq ul li input[type=checkbox]:checked ~ h2 {
+  color: #000;
+}
+
+#faq ul li input[type=checkbox]:checked ~ p {
+  max-height: 0;
+  transition: .3s;
+  opacity: 0;
+}
+
+#faq ul li input[type=checkbox]:checked ~ i:before {
+  transform: translate(2px, 0) rotate(45deg);
+}
+
+#faq ul li input[type=checkbox]:checked ~ i:after {
+  transform: translate(-2px, 0) rotate(-45deg);
+}
+
+/* DESKTOP */
 .dropdownmenu {
 	margin-top: -100vh;
 	transition: margin-top 0.3s ease-in-out;
+}
+/*
+.btnopen:hover {
+	pointer-events: none;
+}
+*/
+
+.play-icon-mc .eicon-play {
+	color: #fff !important;
+	text-shadow: 1px 0 6px rgba(0,0,0,.3) !important;
+	font-size: 100px !important;
 }
 
 .fotosprofessores .widget-image-caption {
@@ -280,70 +425,16 @@ img.emoji {
 </head>
 <body class="page-template page-template-elementor_canvas page page-id-750 wp-custom-logo elementor-default elementor-template-canvas elementor-kit-8 elementor-page elementor-page-750">
 	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>		<div data-elementor-type="wp-post" data-elementor-id="750" class="elementor elementor-750">
-							<div class="elementor-element elementor-element-24ddd5a dropdownmenu elementor-hidden-desktop elementor-hidden-tablet e-flex e-con-boxed e-con" data-id="24ddd5a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+							<div class="elementor-element elementor-element-8c9eff5 dropdownmenu elementor-hidden-desktop elementor-hidden-tablet e-flex e-con-boxed e-con" data-id="8c9eff5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-cc32b6a elementor-widget elementor-widget-html" data-id="cc32b6a" data-element_type="widget" data-widget_type="html.default">
-				<div class="elementor-widget-container">
-			<script>document.addEventListener('DOMContentLoaded', function() {
-		const btnOpen = document.querySelector('.btnopen');
-		const btnClose = document.querySelector('.btnclose');
-		const dropdownMenu = document.querySelector('.dropdownmenu');
-		const menuLinks = document.querySelectorAll('.dropdownmenu a');
-		const pageLinks = document.querySelectorAll('a:not(.dropdownmenu a)');
-		const scrollEndPosition = window.innerHeight; // Posição em que a rolagem termina (100vh)
-
-		function closeMenu() {
-			dropdownMenu.style.marginTop = '-100vh';
-			btnOpen.classList.remove('active');
-			dropdownMenu.classList.remove('active');
-		}
-		
-		btnOpen.addEventListener('click', function() {
-			const isOpen = dropdownMenu.classList.contains('active');
-			if (isOpen) {
-				closeMenu();
-			} else {
-				dropdownMenu.style.marginTop = '0';
-				scrollTo({ top: 0, behavior: 'smooth' }); // Aqui também removemos 'window.'
-				btnOpen.classList.add('active');
-				dropdownMenu.classList.add('active');
-			}
-		});
-		
-		btnClose.addEventListener('click', function() {
-			closeMenu();
-		});
-		
-		// Listen to clicks on all links inside the menu
-		menuLinks.forEach(link => {
-			link.addEventListener('click', function() {
-				closeMenu();
-			});
-		});
-	
-		// Listen to clicks on all links outside the menu (on the page)
-		pageLinks.forEach(link => {
-			link.addEventListener('click', function() {
-				closeMenu();
-			});
-		});
-
-		// Listen to scroll event and close menu when scrolled to the end of dropdownmenu
-		addEventListener('scroll', function() { // Aqui também removemos 'window.'
-			if (pageYOffset >= scrollEndPosition) { // Aqui também removemos 'window.'
-				closeMenu();
-			}
-		});
-    });</script>		</div>
-				</div>
-				<div class="elementor-element elementor-element-fde71c2 elementor-widget elementor-widget-image" data-id="fde71c2" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-e7d5436 elementor-widget elementor-widget-image" data-id="e7d5436" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.14.0 - 26-06-2023 */
 .elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>													<a href="./../index.html">
 							<img decoding="async" width="256" height="256" src="./../wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg" class="attachment-large size-large wp-image-13" alt="" loading="lazy">								</a>
 															</div>
 				</div>
-				<div class="elementor-element elementor-element-d21af9c elementor-align-center elementor-tablet-align-center elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="d21af9c" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-element elementor-element-c1bf83f elementor-align-center elementor-tablet-align-center elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c1bf83f" data-element_type="widget" data-widget_type="icon-list.default">
 				<div class="elementor-widget-container">
 			<link rel="stylesheet" href="./../wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">		<ul class="elementor-icon-list-items">
 							<li class="elementor-icon-list-item">
@@ -397,8 +488,8 @@ img.emoji {
 						</ul>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-2182241 e-con-full elementor-hidden-desktop elementor-hidden-tablet e-flex e-con" data-id="2182241" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-83cc3ae btnclose elementor-view-default elementor-widget elementor-widget-icon" data-id="83cc3ae" data-element_type="widget" data-widget_type="icon.default">
+		<div class="elementor-element elementor-element-b9c68d3 e-con-full elementor-hidden-desktop elementor-hidden-tablet e-flex e-con" data-id="b9c68d3" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-93b295d btnclose elementor-view-default elementor-widget elementor-widget-icon" data-id="93b295d" data-element_type="widget" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
@@ -411,8 +502,6 @@ img.emoji {
 				</div>
 		<div class="elementor-element elementor-element-b4927b4 e-flex e-con-boxed e-con" data-id="b4927b4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-bacbbff e-con-full elementor-hidden-mobile e-flex e-con" data-id="bacbbff" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				</div>
 		<div class="elementor-element elementor-element-47d1329 e-con-full e-flex e-con" data-id="47d1329" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-22950bb elementor-widget elementor-widget-image" data-id="22950bb" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
@@ -431,20 +520,79 @@ img.emoji {
 															<img decoding="async" width="30" height="18" src="./../wp-content/uploads/2023/07/fr.png" class="attachment-large size-large wp-image-615" alt="" loading="lazy">															</div>
 				</div>
 				</div>
+		<div class="elementor-element elementor-element-352652e e-con-full e-flex e-con" data-id="352652e" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-23ee5b5 elementor-widget elementor-widget-html" data-id="23ee5b5" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<script>document.addEventListener('DOMContentLoaded', function() {
+		const btnOpen = document.querySelector('.btnopen');
+		const btnClose = document.querySelector('.btnclose');
+		const dropdownMenu = document.querySelector('.dropdownmenu');
+		const menuLinks = document.querySelectorAll('.dropdownmenu a');
+		const pageLinks = document.querySelectorAll('a:not(.dropdownmenu a)');
+		const scrollEndPosition = window.innerHeight; // Posição em que a rolagem termina (100vh)
+
+		function closeMenu() {
+			dropdownMenu.style.marginTop = '-100vh';
+			btnOpen.classList.remove('active');
+			dropdownMenu.classList.remove('active');
+			btnOpen.blur(); // Remover foco do botão btnOpen ao fechar o menu
+		}
+		
+		btnOpen.addEventListener('click', function() {
+			const isOpen = dropdownMenu.classList.contains('active');
+			if (isOpen) {
+				closeMenu();
+			} else {
+				dropdownMenu.style.marginTop = '0';
+				scrollTo({ top: 0, behavior: 'smooth' });
+				btnOpen.classList.add('active');
+				dropdownMenu.classList.add('active');
+				btnOpen.blur(); // Remover foco do botão btnOpen ao abrir o menu
+			}
+		});
+		
+		btnClose.addEventListener('click', function() {
+			closeMenu();
+		});
+		
+		// Listen to clicks on all links inside the menu
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function() {
+				closeMenu();
+			});
+		});
+	
+		// Listen to clicks on all links outside the menu (on the page)
+		pageLinks.forEach(link => {
+			link.addEventListener('click', function() {
+				closeMenu();
+			});
+		});
+
+		// Listen to scroll event and close menu when scrolled to the end of dropdownmenu
+		addEventListener('scroll', function() { // Aqui também removemos 'window.'
+			if (pageYOffset >= scrollEndPosition) { // Aqui também removemos 'window.'
+				closeMenu();
+			}
+		});
+    });</script>
+		</div>
+				</div>
+				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-78d3a45 headertop e-flex e-con-boxed e-con" data-id="78d3a45" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+		<div class="elementor-element elementor-element-b009cc0 headertop e-flex e-con-boxed e-con" data-id="b009cc0" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-e395a03 e-con-full e-flex e-con" data-id="e395a03" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-fb9d82c elementor-widget elementor-widget-image" data-id="fb9d82c" data-element_type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-f7106ac e-con-full e-flex e-con" data-id="f7106ac" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-20f05ac elementor-widget elementor-widget-image" data-id="20f05ac" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 																<a href="./../index.html">
 							<img decoding="async" width="256" height="256" src="./../wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg" class="attachment-large size-large wp-image-13" alt="" loading="lazy">								</a>
 															</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-35bdfe5 e-con-full elementor-hidden-mobile e-flex e-con" data-id="35bdfe5" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-ce4fde0 elementor-icon-list--layout-inline elementor-align-right elementor-tablet-align-center elementor-hidden-mobile elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="ce4fde0" data-element_type="widget" data-widget_type="icon-list.default">
+		<div class="elementor-element elementor-element-cb2f0a3 e-con-full elementor-hidden-mobile e-flex e-con" data-id="cb2f0a3" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-80d140d elementor-icon-list--layout-inline elementor-align-right elementor-tablet-align-center elementor-hidden-mobile elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="80d140d" data-element_type="widget" data-widget_type="icon-list.default">
 				<div class="elementor-widget-container">
 					<ul class="elementor-icon-list-items elementor-inline-items">
 							<li class="elementor-icon-list-item elementor-inline-item">
@@ -499,8 +647,8 @@ img.emoji {
 				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-7ece170 e-con-full elementor-hidden-desktop elementor-hidden-tablet e-flex e-con" data-id="7ece170" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-5f4649d btnopen elementor-view-default elementor-widget elementor-widget-icon" data-id="5f4649d" data-element_type="widget" data-widget_type="icon.default">
+		<div class="elementor-element elementor-element-d5337f3 e-con-full elementor-hidden-desktop elementor-hidden-tablet e-flex e-con" data-id="d5337f3" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-31c604c btnopen elementor-view-default elementor-widget elementor-widget-icon" data-id="31c604c" data-element_type="widget" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
@@ -739,7 +887,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 <script src="./../wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.14.1" id="elementor-frontend-modules-js"></script>
 <script src="./../wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
 <script src="./../wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
-<script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir vídeo","previous":"Anterior","next":"Próximo","close":"Fechar","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Celular em modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Celular em modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Paisagem do tablet","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.14.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"hello-theme-header-footer":true,"landing-pages":true},"urls":{"assets":".\/\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"hello_header_logo_type":"logo","hello_footer_logo_type":"logo"},"post":{"id":750,"title":"EAD%20%E2%80%93%20Centro%20Musical%20Bernardo%20Bessler","excerpt":"","featuredImage":false}};</script>
+<script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir vídeo","previous":"Anterior","next":"Próximo","close":"Fechar","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Celular em modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Celular em modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Paisagem do tablet","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.14.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"hello-theme-header-footer":true,"landing-pages":true},"urls":{"assets":".\/\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":750,"title":"EAD%20%E2%80%93%20Centro%20Musical%20Bernardo%20Bessler","excerpt":"","featuredImage":false}};</script>
 <script src="./../wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.14.1" id="elementor-frontend-js"></script>
 	</body>
 </html>

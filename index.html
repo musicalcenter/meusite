@@ -38,7 +38,7 @@ img.emoji {
 <link rel="stylesheet" id="elementor-icons-css" href="./wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.20.0" media="all">
 <link rel="stylesheet" id="swiper-css" href="./wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5" media="all">
 <link rel="stylesheet" id="elementor-global-css" href="./wp-content/uploads/elementor/css/global.css?ver=1689959679" media="all">
-<link rel="stylesheet" id="elementor-post-11-css" href="./wp-content/uploads/elementor/css/post-11.css?ver=1689981376" media="all">
+<link rel="stylesheet" id="elementor-post-11-css" href="./wp-content/uploads/elementor/css/post-11.css?ver=1690072482" media="all">
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMarcellus%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMarcellus+SC%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.2.2" media="all">
 <link rel="stylesheet" id="elementor-icons-shared-0-css" href="./wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3" media="all">
 <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="./wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3" media="all">
@@ -70,6 +70,10 @@ img.emoji {
 <link rel="apple-touch-icon" href="./wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg">
 <meta name="msapplication-TileImage" content="./wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg">
 		<style id="wp-custom-css">/* ACCORDION */
+.dropdownmenu {
+  margin-top: -100vh;
+}
+
 #faq {
   width: 100%;
   margin: auto;
@@ -204,16 +208,6 @@ img.emoji {
 }
 
 /* DESKTOP */
-.dropdownmenu {
-	margin-top: -100vh;
-	transition: margin-top 0.3s ease-in-out;
-}
-/*
-.btnopen:hover {
-	pointer-events: none;
-}
-*/
-
 .play-icon-mc .eicon-play {
 	color: #fff !important;
 	text-shadow: 1px 0 6px rgba(0,0,0,.3) !important;
@@ -239,8 +233,25 @@ img.emoji {
 	transition: filter 0.3s ease-in-out;
 }
 
+.overlaybackground {
+	height: 100%;
+  width: 100%;
+  transition: background 0.3s ease, opacity 0.6s ease;
+  opacity: 0;
+}
+
+.overlaybackground:hover {
+  background: url("./wp-content/uploads/2023/07/effect_Musicalcenter.png"), #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 75px 75px;
+  opacity: 0.7;
+	transition: background 0.3s ease, opacity 0.6s ease;
+}
+
 .fotosespaco {
-	height: 300px !important;
+	height: 300px;
+  width: 100%;
 	background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -251,18 +262,8 @@ img.emoji {
 	transition: background 0.3s ease-in-out;
 }
 
-.fotosespaco#foto-1:hover {
-	background-image: url("./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-1-2.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
 .fotosespaco#foto-2 {
 	background-image: url("./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-2-1.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
-.fotosespaco#foto-2:hover {
-	background-image: url("./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-2-2.jpg");
 	transition: background 0.3s ease-in-out;
 }
 
@@ -271,18 +272,8 @@ img.emoji {
 	transition: background 0.3s ease-in-out;
 }
 
-.fotosespaco#foto-3:hover {
-	background-image: url("./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-3-2.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
 .fotosespaco#foto-4 {
 	background-image: url("./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-4-1.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
-.fotosespaco#foto-4:hover {
-	background-image: url("./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-4-2.jpg");
 	transition: background 0.3s ease-in-out;
 }
 
@@ -298,7 +289,8 @@ img.emoji {
 }
 
 .fotosead1 {
-	height: 300px !important;
+	height: 300px;
+  width: 100%;
 	background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -309,23 +301,14 @@ img.emoji {
 	transition: background 0.3s ease-in-out;
 }
 
-.fotosead1#foto-1:hover {
-	background-image: url("./wp-content/uploads/2023/07/ead1-2.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
 .fotosead1#foto-2 {
 	background-image: url("./wp-content/uploads/2023/07/ead2-1.jpg");
 	transition: background 0.3s ease-in-out;
 }
 
-.fotosead1#foto-2:hover {
-	background-image: url("./wp-content/uploads/2023/07/ead2-2.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
 .fotosead2 {
-	height: 140px !important;
+	height: 140px;
+  width: 100%;
 	background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -336,18 +319,8 @@ img.emoji {
 	transition: background 0.3s ease-in-out;
 }
 
-.fotosead2#foto-1:hover {
-	background-image: url("./wp-content/uploads/2023/07/ead3-2.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
 .fotosead2#foto-2 {
 	background-image: url("./wp-content/uploads/2023/07/ead4-1.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
-.fotosead2#foto-2:hover {
-	background-image: url("./wp-content/uploads/2023/07/ead4-2.jpg");
 	transition: background 0.3s ease-in-out;
 }
 
@@ -356,18 +329,8 @@ img.emoji {
 	transition: background 0.3s ease-in-out;
 }
 
-.fotosead2#foto-3:hover {
-	background-image: url("./wp-content/uploads/2023/07/ead5-2.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
 .fotosead2#foto-4 {
 	background-image: url("./wp-content/uploads/2023/07/ead6-1.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
-.fotosead2#foto-4:hover {
-	background-image: url("./wp-content/uploads/2023/07/ead6-2.jpg");
 	transition: background 0.3s ease-in-out;
 }
 
@@ -425,7 +388,7 @@ img.emoji {
 </head>
 <body class="home page-template page-template-elementor_canvas page page-id-11 wp-custom-logo elementor-default elementor-template-canvas elementor-kit-8 elementor-page elementor-page-11">
 	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>		<div data-elementor-type="wp-post" data-elementor-id="11" class="elementor elementor-11">
-							<div class="elementor-element elementor-element-be2e8ae dropdownmenu elementor-hidden-desktop elementor-hidden-tablet e-flex e-con-boxed e-con" data-id="be2e8ae" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+							<div class="elementor-element elementor-element-be2e8ae dropdownmenu elementor-hidden-tablet elementor-hidden-desktop e-flex e-con-boxed e-con" data-id="be2e8ae" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-353bd5d elementor-widget elementor-widget-html" data-id="353bd5d" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
@@ -435,7 +398,7 @@ img.emoji {
 		const dropdownMenu = document.querySelector('.dropdownmenu');
 		const menuLinks = document.querySelectorAll('.dropdownmenu a');
 		const pageLinks = document.querySelectorAll('a:not(.dropdownmenu a)');
-		const scrollEndPosition = window.innerHeight; // Posição em que a rolagem termina (100vh)
+		const scrollEndPosition = window.innerHeight;
 
 		function closeMenu() {
 			dropdownMenu.style.marginTop = '-100vh';
@@ -449,7 +412,7 @@ img.emoji {
 				closeMenu();
 			} else {
 				dropdownMenu.style.marginTop = '0';
-				scrollTo({ top: 0, behavior: 'smooth' }); // Aqui também removemos 'window.'
+				scrollTo({ top: 0, behavior: 'smooth' });
 				btnOpen.classList.add('active');
 				dropdownMenu.classList.add('active');
 			}
@@ -459,33 +422,31 @@ img.emoji {
 			closeMenu();
 		});
 		
-		// Listen to clicks on all links inside the menu
 		menuLinks.forEach(link => {
 			link.addEventListener('click', function() {
 				closeMenu();
 			});
 		});
 	
-		// Listen to clicks on all links outside the menu (on the page)
 		pageLinks.forEach(link => {
 			link.addEventListener('click', function() {
 				closeMenu();
 			});
 		});
 
-		// Listen to scroll event and close menu when scrolled to the end of dropdownmenu
-		addEventListener('scroll', function() { // Aqui também removemos 'window.'
-			if (pageYOffset >= scrollEndPosition) { // Aqui também removemos 'window.'
+		addEventListener('scroll', function() {
+			if (pageYOffset >= scrollEndPosition) {
 				closeMenu();
 			}
 		});
+		dropdownMenu.style.transition = 'margin-top 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0)';
     });</script>		</div>
 				</div>
 				<div class="elementor-element elementor-element-d122a4b elementor-widget elementor-widget-image" data-id="d122a4b" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.14.0 - 26-06-2023 */
 .elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>													<a href="./index.html">
-							<img decoding="async" width="256" height="256" src="./wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg" class="attachment-large size-large wp-image-13" alt="" loading="lazy">								</a>
+							<img decoding="async" width="256" height="256" src="./wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg" class="attachment-large size-large wp-image-13" alt="Centro Musical Bernardo Bessler _ Favicon" loading="lazy">								</a>
 															</div>
 				</div>
 				<div class="elementor-element elementor-element-84733ec elementor-align-center elementor-tablet-align-center elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="84733ec" data-element_type="widget" data-widget_type="icon-list.default">
@@ -561,19 +522,19 @@ img.emoji {
 		<div class="elementor-element elementor-element-bd1d9a0 e-con-full e-flex e-con" data-id="bd1d9a0" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-4152104 elementor-widget elementor-widget-image" data-id="4152104" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="30" height="18" src="./wp-content/uploads/2023/07/uk.png" class="attachment-large size-large wp-image-616" alt="" loading="lazy">															</div>
+															<img decoding="async" width="30" height="18" src="./wp-content/uploads/2023/07/uk.png" class="attachment-large size-large wp-image-616" alt="uk" loading="lazy">															</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-109fb5d e-con-full e-flex e-con" data-id="109fb5d" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-fc28035 elementor-widget elementor-widget-image" data-id="fc28035" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="30" height="18" src="./wp-content/uploads/2023/07/es.png" class="attachment-large size-large wp-image-614" alt="" loading="lazy">															</div>
+															<img decoding="async" width="30" height="18" src="./wp-content/uploads/2023/07/es.png" class="attachment-large size-large wp-image-614" alt="es" loading="lazy">															</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-b9ebb6a e-con-full e-flex e-con" data-id="b9ebb6a" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-5cdb163 elementor-widget elementor-widget-image" data-id="5cdb163" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="30" height="18" src="./wp-content/uploads/2023/07/fr.png" class="attachment-large size-large wp-image-615" alt="" loading="lazy">															</div>
+															<img decoding="async" width="30" height="18" src="./wp-content/uploads/2023/07/fr.png" class="attachment-large size-large wp-image-615" alt="fr" loading="lazy">															</div>
 				</div>
 				</div>
 					</div>
@@ -584,7 +545,7 @@ img.emoji {
 				<div class="elementor-element elementor-element-a5541d8 elementor-widget elementor-widget-image" data-id="a5541d8" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 																<a href="./index.html">
-							<img decoding="async" width="256" height="256" src="./wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg" class="attachment-large size-large wp-image-13" alt="" loading="lazy">								</a>
+							<img decoding="async" width="256" height="256" src="./wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg" class="attachment-large size-large wp-image-13" alt="Centro Musical Bernardo Bessler _ Favicon" loading="lazy">								</a>
 															</div>
 				</div>
 				</div>
@@ -662,7 +623,7 @@ img.emoji {
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-ece018a elementor-widget elementor-widget-image" data-id="ece018a" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="226" height="300" src="./wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Logo.png" class="attachment-large size-large wp-image-10" alt="" loading="lazy">															</div>
+															<img decoding="async" width="226" height="300" src="./wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Logo.png" class="attachment-large size-large wp-image-10" alt="Centro Musical Bernardo Bessler _ Logo" loading="lazy">															</div>
 				</div>
 					</div>
 				</div>
@@ -704,7 +665,7 @@ img.emoji {
 		<div class="elementor-element elementor-element-0a99e6a e-con-full elementor-hidden-tablet elementor-hidden-mobile e-flex e-con" data-id="0a99e6a" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-9ad0279 elementor-widget elementor-widget-image" data-id="9ad0279" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="478" height="750" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Home-Violinista.jpg" class="attachment-1536x1536 size-1536x1536 wp-image-75" alt="" loading="lazy">															</div>
+															<img decoding="async" width="478" height="750" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Home-Violinista.jpg" class="attachment-1536x1536 size-1536x1536 wp-image-75" alt="Escola de Música Centro Musical Bernardo Bessler _ Home Violinista" loading="lazy">															</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-1141a06 e-con-full e-flex e-con" data-id="1141a06" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
@@ -837,13 +798,13 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				</div>
 				<div class="elementor-element elementor-element-7bdd239 elementor-widget elementor-widget-image" data-id="7bdd239" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="300" height="101" src="./wp-content/uploads/2023/07/Google_2015_logo.png" class="attachment-large size-large wp-image-733" alt="" loading="lazy">															</div>
+															<img decoding="async" width="300" height="101" src="./wp-content/uploads/2023/07/Google_2015_logo.png" class="attachment-large size-large wp-image-733" alt="Google_2015_logo" loading="lazy">															</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-ab9d3a2 e-con-full e-flex e-con" data-id="ab9d3a2" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-d765c84 elementor-widget elementor-widget-image" data-id="d765c84" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="40" height="40" src="./wp-content/uploads/2023/07/iris.png" class="attachment-thumbnail size-thumbnail wp-image-720" alt="" loading="lazy">															</div>
+															<img decoding="async" width="40" height="40" src="./wp-content/uploads/2023/07/iris.png" class="attachment-thumbnail size-thumbnail wp-image-720" alt="iris" loading="lazy">															</div>
 				</div>
 		<div class="elementor-element elementor-element-50394a5 e-flex e-con-boxed e-con" data-id="50394a5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
@@ -892,7 +853,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 		<div class="elementor-element elementor-element-88a3c28 e-con-full e-flex e-con" data-id="88a3c28" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-25fda43 elementor-widget elementor-widget-image" data-id="25fda43" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="40" height="40" src="./wp-content/uploads/2023/07/tatiana.png" class="attachment-thumbnail size-thumbnail wp-image-725" alt="" loading="lazy">															</div>
+															<img decoding="async" width="40" height="40" src="./wp-content/uploads/2023/07/tatiana.png" class="attachment-thumbnail size-thumbnail wp-image-725" alt="tatiana" loading="lazy">															</div>
 				</div>
 		<div class="elementor-element elementor-element-d5f150f e-flex e-con-boxed e-con" data-id="d5f150f" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
@@ -941,7 +902,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 		<div class="elementor-element elementor-element-27bd04c e-con-full e-flex e-con" data-id="27bd04c" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-98d93a1 elementor-widget elementor-widget-image" data-id="98d93a1" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="40" height="40" src="./wp-content/uploads/2023/07/unnamed.png" class="attachment-thumbnail size-thumbnail wp-image-726" alt="" loading="lazy">															</div>
+															<img decoding="async" width="40" height="40" src="./wp-content/uploads/2023/07/unnamed.png" class="attachment-thumbnail size-thumbnail wp-image-726" alt="Ayrlon" loading="lazy">															</div>
 				</div>
 		<div class="elementor-element elementor-element-18f5114 e-flex e-con-boxed e-con" data-id="18f5114" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
@@ -1027,7 +988,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-c725513 fotoscursos elementor-widget elementor-widget-image" data-id="c725513" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Violino.jpg" class="attachment-full size-full wp-image-102" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Violino</figcaption>
+										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Violino.jpg" class="attachment-full size-full wp-image-102" alt="Escola de Música Centro Musical Bernardo Bessler _ Violino" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Violino</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1036,7 +997,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-fc1a2ba fotoscursos elementor-widget elementor-widget-image" data-id="fc1a2ba" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Viola.jpg" class="attachment-full size-full wp-image-100" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Viola</figcaption>
+										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Viola.jpg" class="attachment-full size-full wp-image-100" alt="Escola de Música Centro Musical Bernardo Bessler _ Viola" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Viola</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1045,7 +1006,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-62398bc fotoscursos elementor-widget elementor-widget-image" data-id="62398bc" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Violoncelo.jpg" class="attachment-full size-full wp-image-103" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Violoncelo</figcaption>
+										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Violoncelo.jpg" class="attachment-full size-full wp-image-103" alt="Escola de Música Centro Musical Bernardo Bessler _ Violoncelo" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Violoncelo</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1054,7 +1015,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-74a4f62 fotoscursos elementor-widget elementor-widget-image" data-id="74a4f62" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Contrabaixo.jpg" class="attachment-full size-full wp-image-92" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Contrabaixo</figcaption>
+										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Contrabaixo.jpg" class="attachment-full size-full wp-image-92" alt="Escola de Música Centro Musical Bernardo Bessler _ Contrabaixo" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Contrabaixo</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1067,7 +1028,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-6e2470e fotoscursos elementor-widget elementor-widget-image" data-id="6e2470e" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Violao.jpg" class="attachment-full size-full wp-image-101" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Violão</figcaption>
+										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Violao.jpg" class="attachment-full size-full wp-image-101" alt="Escola de Música Centro Musical Bernardo Bessler _ Violao" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Violão</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1076,7 +1037,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-be18f65 fotoscursos elementor-widget elementor-widget-image" data-id="be18f65" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Teclado-e-Piano.jpg" class="attachment-full size-full wp-image-98" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Teclado<br> E Piano</figcaption>
+										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Teclado-e-Piano.jpg" class="attachment-full size-full wp-image-98" alt="Escola de Música Centro Musical Bernardo Bessler _ Teclado e Piano" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Teclado<br> E Piano</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1085,7 +1046,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-2f3730a fotoscursos elementor-widget elementor-widget-image" data-id="2f3730a" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Musica-de-Camara.jpg" class="attachment-full size-full wp-image-94" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Música de<br> Câmara</figcaption>
+										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Musica-de-Camara.jpg" class="attachment-full size-full wp-image-94" alt="Escola de Música Centro Musical Bernardo Bessler _ Musica de Camara" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Música de<br> Câmara</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1094,7 +1055,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-0d5c04d fotoscursos elementor-widget elementor-widget-image" data-id="0d5c04d" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Musicalizacao.jpg" class="attachment-full size-full wp-image-95" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Musicalização</figcaption>
+										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Musicalizacao.jpg" class="attachment-full size-full wp-image-95" alt="Escola de Música Centro Musical Bernardo Bessler _ Musicalização" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Musicalização</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1107,7 +1068,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-9466095 fotoscursos elementor-widget elementor-widget-image" data-id="9466095" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Teoria-Solfejo-Percepcao.jpg" class="attachment-full size-full wp-image-99" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Teoria, Solfejo<br> E Percepção</figcaption>
+										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Teoria-Solfejo-Percepcao.jpg" class="attachment-full size-full wp-image-99" alt="Escola de Música Centro Musical Bernardo Bessler _ Teoria Solfejo Percepcao" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Teoria, Solfejo<br> E Percepção</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1116,7 +1077,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-e2a1770 fotoscursos elementor-widget elementor-widget-image" data-id="e2a1770" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Harmonia-Funcional.jpg" class="attachment-full size-full wp-image-93" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Harmonia<br> Funcional</figcaption>
+										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Harmonia-Funcional.jpg" class="attachment-full size-full wp-image-93" alt="Escola de Música Centro Musical Bernardo Bessler _ Harmonia Funcional" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Harmonia<br> Funcional</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1125,7 +1086,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-919056c fotoscursos elementor-widget elementor-widget-image" data-id="919056c" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Preparatorio-THE.jpg" class="attachment-full size-full wp-image-96" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Preparatório<br> para THE</figcaption>
+										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Preparatorio-THE.jpg" class="attachment-full size-full wp-image-96" alt="Escola de Música Centro Musical Bernardo Bessler _ Preparatorio THE" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Preparatório<br> para THE</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1134,7 +1095,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-f87ae4d fotoscursos elementor-widget elementor-widget-image" data-id="f87ae4d" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Regencia.jpg" class="attachment-full size-full wp-image-97" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Regência</figcaption>
+										<img decoding="async" width="350" height="350" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Regencia.jpg" class="attachment-full size-full wp-image-97" alt="Escola de Música Centro Musical Bernardo Bessler _ Regencia" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Regência</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1163,7 +1124,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-cbe667a fotosprofessores elementor-widget elementor-widget-image" data-id="cbe667a" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="357" height="500" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Bernardo.jpg" class="attachment-full size-full wp-image-180" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Bernardo Bessler</figcaption>
+										<img decoding="async" width="357" height="500" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Bernardo.jpg" class="attachment-full size-full wp-image-180" alt="Escola de Música Centro Musical Bernardo Bessler _ Bernardo" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Bernardo Bessler</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1172,7 +1133,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-ee6e253 fotosprofessores elementor-widget elementor-widget-image" data-id="ee6e253" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="357" height="500" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Cris.jpg" class="attachment-full size-full wp-image-181" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Christine Springuel</figcaption>
+										<img decoding="async" width="357" height="500" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Cris.jpg" class="attachment-full size-full wp-image-181" alt="Escola de Música Centro Musical Bernardo Bessler _ Cris" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Christine Springuel</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1181,7 +1142,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-ae37ae0 fotosprofessores elementor-widget elementor-widget-image" data-id="ae37ae0" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="357" height="500" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Lucas.jpg" class="attachment-full size-full wp-image-183" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Lucas Lopes</figcaption>
+										<img decoding="async" width="357" height="500" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Lucas.jpg" class="attachment-full size-full wp-image-183" alt="Escola de Música Centro Musical Bernardo Bessler _ Lucas" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Lucas Lopes</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1190,7 +1151,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-32ef505 fotosprofessores elementor-widget elementor-widget-image" data-id="32ef505" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="357" height="500" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Fernanda.jpg" class="attachment-full size-full wp-image-182" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Fernanda Donato</figcaption>
+										<img decoding="async" width="357" height="500" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Fernanda.jpg" class="attachment-full size-full wp-image-182" alt="Escola de Música Centro Musical Bernardo Bessler _ Fernanda" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Fernanda Donato</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1382,25 +1343,45 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 		<div class="elementor-element elementor-element-fcb90ec e-con-full e-flex e-con" data-id="fcb90ec" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-21dc4a9 elementor-widget elementor-widget-html" data-id="21dc4a9" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
-			<a href="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-1.jpg" rel="lightbox-0"><div class="fotosespaco" id="foto-1"></div></a>		</div>
+			<a href="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-1.jpg" rel="lightbox-0">
+    <div class="fotosespaco" id="foto-1">
+      <div class="overlaybackground">
+      </div>
+    </div>
+</a>		</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-ae85bbb e-con-full e-flex e-con" data-id="ae85bbb" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-d6a9bdb elementor-widget elementor-widget-html" data-id="d6a9bdb" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
-			<a href="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-2.jpg" rel="lightbox-1"><div class="fotosespaco" id="foto-2"></div></a>		</div>
+			<a href="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-2.jpg" rel="lightbox-1">
+    <div class="fotosespaco" id="foto-2">
+      <div class="overlaybackground">
+      </div>
+    </div>
+</a>		</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-3a7d892 e-con-full e-flex e-con" data-id="3a7d892" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-26f0b0c elementor-widget elementor-widget-html" data-id="26f0b0c" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
-			<a href="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-3.jpg" rel="lightbox-2"><div class="fotosespaco" id="foto-3"></div></a>		</div>
+			<a href="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-3.jpg" rel="lightbox-2">
+    <div class="fotosespaco" id="foto-3">
+      <div class="overlaybackground">
+      </div>
+    </div>
+</a>		</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-fc7f04d e-con-full e-flex e-con" data-id="fc7f04d" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-8f23e58 elementor-widget elementor-widget-html" data-id="8f23e58" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
-			<a href="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-4.jpg" rel="lightbox-3"><div class="fotosespaco" id="foto-4"></div></a>		</div>
+			<a href="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-4.jpg" rel="lightbox-3">
+    <div class="fotosespaco" id="foto-4">
+      <div class="overlaybackground">
+      </div>
+    </div>
+</a>		</div>
 				</div>
 				</div>
 					</div>
@@ -1464,7 +1445,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-488f108 fotosprofessores elementor-widget elementor-widget-image" data-id="488f108" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="375" height="500" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Quarteto-1.jpg" class="attachment-full size-full wp-image-442" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Bernardo Bessler</figcaption>
+										<img decoding="async" width="375" height="500" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Quarteto-1.jpg" class="attachment-full size-full wp-image-442" alt="Escola de Música Centro Musical Bernardo Bessler _ Quarteto 1" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Bernardo Bessler</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1473,7 +1454,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-7d2bd59 fotosprofessores elementor-widget elementor-widget-image" data-id="7d2bd59" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="357" height="500" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Quarteto-2.jpg" class="attachment-full size-full wp-image-443" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Jovana Trifunovic</figcaption>
+										<img decoding="async" width="357" height="500" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Quarteto-2.jpg" class="attachment-full size-full wp-image-443" alt="Escola de Música Centro Musical Bernardo Bessler _ Quarteto 2" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Jovana Trifunovic</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1482,7 +1463,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-0d6dd68 fotosprofessores elementor-widget elementor-widget-image" data-id="0d6dd68" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="358" height="500" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Quarteto-3.jpg" class="attachment-full size-full wp-image-444" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Christine Springuel</figcaption>
+										<img decoding="async" width="358" height="500" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Quarteto-3.jpg" class="attachment-full size-full wp-image-444" alt="Escola de Música Centro Musical Bernardo Bessler _ Quarteto 3" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Christine Springuel</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1491,7 +1472,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				<div class="elementor-element elementor-element-889974b fotosprofessores elementor-widget elementor-widget-image" data-id="889974b" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 												<figure class="wp-caption">
-										<img decoding="async" width="357" height="500" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Quarteto-4.jpg" class="attachment-full size-full wp-image-445" alt="" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Marcus Ribeiro</figcaption>
+										<img decoding="async" width="357" height="500" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Quarteto-4.jpg" class="attachment-full size-full wp-image-445" alt="Escola de Música Centro Musical Bernardo Bessler _ Quarteto 4" loading="lazy">											<figcaption class="widget-image-caption wp-caption-text">Marcus Ribeiro</figcaption>
 										</figure>
 									</div>
 				</div>
@@ -1582,11 +1563,11 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 		<div class="elementor-element elementor-element-5b69bde e-con-full e-flex e-con" data-id="5b69bde" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-03952bf elementor-widget elementor-widget-image" data-id="03952bf" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="800" height="266" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Atividades-1.jpg" class="attachment-large size-large wp-image-457" alt="" loading="lazy">															</div>
+															<img decoding="async" width="800" height="266" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Atividades-1.jpg" class="attachment-large size-large wp-image-457" alt="Escola de Música Centro Musical Bernardo Bessler _ Atividades 1" loading="lazy">															</div>
 				</div>
 				<div class="elementor-element elementor-element-6baefd7 elementor-widget elementor-widget-image" data-id="6baefd7" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="800" height="267" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Atividades-2.jpg" class="attachment-large size-large wp-image-458" alt="" loading="lazy">															</div>
+															<img decoding="async" width="800" height="267" src="./wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-Atividades-2.jpg" class="attachment-large size-large wp-image-458" alt="Escola de Música Centro Musical Bernardo Bessler _ Atividades 2" loading="lazy">															</div>
 				</div>
 				</div>
 					</div>
@@ -1848,7 +1829,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 <script src="./wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.14.1" id="elementor-frontend-modules-js"></script>
 <script src="./wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
 <script src="./wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
-<script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir vídeo","previous":"Anterior","next":"Próximo","close":"Fechar","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Celular em modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Celular em modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Paisagem do tablet","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.14.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"hello-theme-header-footer":true,"landing-pages":true},"urls":{"assets":"http:\/\/localhost\/musicalcenter.net\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":11,"title":"Centro%20Musical%20Bernardo%20Bessler%20%E2%80%93%20Escola%20de%20M%C3%BAsica%20em%20Niter%C3%B3i","excerpt":"","featuredImage":false}};</script>
+<script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir vídeo","previous":"Anterior","next":"Próximo","close":"Fechar","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Celular em modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Celular em modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Paisagem do tablet","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.14.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"hello-theme-header-footer":true,"landing-pages":true},"urls":{"assets":"http:\/\/localhost\/musicalcenter.net\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"hello_header_logo_type":"logo","hello_footer_logo_type":"logo"},"post":{"id":11,"title":"Centro%20Musical%20Bernardo%20Bessler%20%E2%80%93%20Escola%20de%20M%C3%BAsica%20em%20Niter%C3%B3i","excerpt":"","featuredImage":false}};</script>
 <script src="./wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.14.1" id="elementor-frontend-js"></script>
 	</body>
 </html>

@@ -38,7 +38,7 @@ img.emoji {
 <link rel="stylesheet" id="elementor-icons-css" href="./../wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.20.0" media="all">
 <link rel="stylesheet" id="swiper-css" href="./../wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5" media="all">
 <link rel="stylesheet" id="elementor-global-css" href="./../wp-content/uploads/elementor/css/global.css?ver=1689959679" media="all">
-<link rel="stylesheet" id="elementor-post-750-css" href="./../wp-content/uploads/elementor/css/post-750.css?ver=1689974137" media="all">
+<link rel="stylesheet" id="elementor-post-750-css" href="./../wp-content/uploads/elementor/css/post-750.css?ver=1690072603" media="all">
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMarcellus%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMarcellus+SC%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.2.2" media="all">
 <link rel="stylesheet" id="elementor-icons-shared-0-css" href="./../wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3" media="all">
 <link rel="stylesheet" id="elementor-icons-fa-solid-css" href="./../wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3" media="all">
@@ -70,6 +70,10 @@ img.emoji {
 <link rel="apple-touch-icon" href="./../wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg">
 <meta name="msapplication-TileImage" content="./../wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg">
 		<style id="wp-custom-css">/* ACCORDION */
+.dropdownmenu {
+  margin-top: -100vh;
+}
+
 #faq {
   width: 100%;
   margin: auto;
@@ -204,16 +208,6 @@ img.emoji {
 }
 
 /* DESKTOP */
-.dropdownmenu {
-	margin-top: -100vh;
-	transition: margin-top 0.3s ease-in-out;
-}
-/*
-.btnopen:hover {
-	pointer-events: none;
-}
-*/
-
 .play-icon-mc .eicon-play {
 	color: #fff !important;
 	text-shadow: 1px 0 6px rgba(0,0,0,.3) !important;
@@ -239,8 +233,25 @@ img.emoji {
 	transition: filter 0.3s ease-in-out;
 }
 
+.overlaybackground {
+	height: 100%;
+  width: 100%;
+  transition: background 0.3s ease, opacity 0.6s ease;
+  opacity: 0;
+}
+
+.overlaybackground:hover {
+  background: url("./../wp-content/uploads/2023/07/effect_Musicalcenter.png"), #000;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 75px 75px;
+  opacity: 0.7;
+	transition: background 0.3s ease, opacity 0.6s ease;
+}
+
 .fotosespaco {
-	height: 300px !important;
+	height: 300px;
+  width: 100%;
 	background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -251,18 +262,8 @@ img.emoji {
 	transition: background 0.3s ease-in-out;
 }
 
-.fotosespaco#foto-1:hover {
-	background-image: url("./../wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-1-2.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
 .fotosespaco#foto-2 {
 	background-image: url("./../wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-2-1.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
-.fotosespaco#foto-2:hover {
-	background-image: url("./../wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-2-2.jpg");
 	transition: background 0.3s ease-in-out;
 }
 
@@ -271,18 +272,8 @@ img.emoji {
 	transition: background 0.3s ease-in-out;
 }
 
-.fotosespaco#foto-3:hover {
-	background-image: url("./../wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-3-2.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
 .fotosespaco#foto-4 {
 	background-image: url("./../wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-4-1.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
-.fotosespaco#foto-4:hover {
-	background-image: url("./../wp-content/uploads/2023/07/Escola-de-Musica-Centro-Musical-Bernardo-Bessler-_-4-2.jpg");
 	transition: background 0.3s ease-in-out;
 }
 
@@ -298,7 +289,8 @@ img.emoji {
 }
 
 .fotosead1 {
-	height: 300px !important;
+	height: 300px;
+  width: 100%;
 	background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -309,23 +301,14 @@ img.emoji {
 	transition: background 0.3s ease-in-out;
 }
 
-.fotosead1#foto-1:hover {
-	background-image: url("./../wp-content/uploads/2023/07/ead1-2.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
 .fotosead1#foto-2 {
 	background-image: url("./../wp-content/uploads/2023/07/ead2-1.jpg");
 	transition: background 0.3s ease-in-out;
 }
 
-.fotosead1#foto-2:hover {
-	background-image: url("./../wp-content/uploads/2023/07/ead2-2.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
 .fotosead2 {
-	height: 140px !important;
+	height: 140px;
+  width: 100%;
 	background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -336,18 +319,8 @@ img.emoji {
 	transition: background 0.3s ease-in-out;
 }
 
-.fotosead2#foto-1:hover {
-	background-image: url("./../wp-content/uploads/2023/07/ead3-2.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
 .fotosead2#foto-2 {
 	background-image: url("./../wp-content/uploads/2023/07/ead4-1.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
-.fotosead2#foto-2:hover {
-	background-image: url("./../wp-content/uploads/2023/07/ead4-2.jpg");
 	transition: background 0.3s ease-in-out;
 }
 
@@ -356,18 +329,8 @@ img.emoji {
 	transition: background 0.3s ease-in-out;
 }
 
-.fotosead2#foto-3:hover {
-	background-image: url("./../wp-content/uploads/2023/07/ead5-2.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
 .fotosead2#foto-4 {
 	background-image: url("./../wp-content/uploads/2023/07/ead6-1.jpg");
-	transition: background 0.3s ease-in-out;
-}
-
-.fotosead2#foto-4:hover {
-	background-image: url("./../wp-content/uploads/2023/07/ead6-2.jpg");
 	transition: background 0.3s ease-in-out;
 }
 
@@ -425,16 +388,68 @@ img.emoji {
 </head>
 <body class="page-template page-template-elementor_canvas page page-id-750 wp-custom-logo elementor-default elementor-template-canvas elementor-kit-8 elementor-page elementor-page-750">
 	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0.49803921568627"></fefuncr><fefuncg type="table" tablevalues="0 0.49803921568627"></fefuncg><fefuncb type="table" tablevalues="0 0.49803921568627"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.54901960784314 0.98823529411765"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.71764705882353 0.25490196078431"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 1"></fefuncr><fefuncg type="table" tablevalues="0 0.27843137254902"></fefuncg><fefuncb type="table" tablevalues="0.5921568627451 0.27843137254902"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0 0"></fefuncr><fefuncg type="table" tablevalues="0 0.64705882352941"></fefuncg><fefuncb type="table" tablevalues="0 1"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.78039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.94901960784314"></fefuncg><fefuncb type="table" tablevalues="0.35294117647059 0.47058823529412"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.65098039215686 0.40392156862745"></fefuncr><fefuncg type="table" tablevalues="0 1"></fefuncg><fefuncb type="table" tablevalues="0.44705882352941 0.4"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><fecolormatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 "></fecolormatrix><fecomponenttransfer color-interpolation-filters="sRGB"><fefuncr type="table" tablevalues="0.098039215686275 1"></fefuncr><fefuncg type="table" tablevalues="0 0.66274509803922"></fefuncg><fefuncb type="table" tablevalues="0.84705882352941 0.41960784313725"></fefuncb><fefunca type="table" tablevalues="1 1"></fefunca></fecomponenttransfer><fecomposite in2="SourceGraphic" operator="in"></fecomposite></filter></defs></svg>		<div data-elementor-type="wp-post" data-elementor-id="750" class="elementor elementor-750">
-							<div class="elementor-element elementor-element-8c9eff5 dropdownmenu elementor-hidden-desktop elementor-hidden-tablet e-flex e-con-boxed e-con" data-id="8c9eff5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+							<div class="elementor-element elementor-element-54e6347 dropdownmenu elementor-hidden-tablet elementor-hidden-desktop e-flex e-con-boxed e-con" data-id="54e6347" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-e7d5436 elementor-widget elementor-widget-image" data-id="e7d5436" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-element elementor-element-f267907 elementor-widget elementor-widget-html" data-id="f267907" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<script>document.addEventListener('DOMContentLoaded', function() {
+		const btnOpen = document.querySelector('.btnopen');
+		const btnClose = document.querySelector('.btnclose');
+		const dropdownMenu = document.querySelector('.dropdownmenu');
+		const menuLinks = document.querySelectorAll('.dropdownmenu a');
+		const pageLinks = document.querySelectorAll('a:not(.dropdownmenu a)');
+		const scrollEndPosition = window.innerHeight;
+
+		function closeMenu() {
+			dropdownMenu.style.marginTop = '-100vh';
+			btnOpen.classList.remove('active');
+			dropdownMenu.classList.remove('active');
+		}
+		
+		btnOpen.addEventListener('click', function() {
+			const isOpen = dropdownMenu.classList.contains('active');
+			if (isOpen) {
+				closeMenu();
+			} else {
+				dropdownMenu.style.marginTop = '0';
+				scrollTo({ top: 0, behavior: 'smooth' });
+				btnOpen.classList.add('active');
+				dropdownMenu.classList.add('active');
+			}
+		});
+		
+		btnClose.addEventListener('click', function() {
+			closeMenu();
+		});
+		
+		menuLinks.forEach(link => {
+			link.addEventListener('click', function() {
+				closeMenu();
+			});
+		});
+	
+		pageLinks.forEach(link => {
+			link.addEventListener('click', function() {
+				closeMenu();
+			});
+		});
+
+		addEventListener('scroll', function() {
+			if (pageYOffset >= scrollEndPosition) {
+				closeMenu();
+			}
+		});
+		dropdownMenu.style.transition = 'margin-top 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0)';
+    });</script>		</div>
+				</div>
+				<div class="elementor-element elementor-element-15ea756 elementor-widget elementor-widget-image" data-id="15ea756" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.14.0 - 26-06-2023 */
 .elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>													<a href="./../index.html">
-							<img decoding="async" width="256" height="256" src="./../wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg" class="attachment-large size-large wp-image-13" alt="" loading="lazy">								</a>
+							<img decoding="async" width="256" height="256" src="./../wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg" class="attachment-large size-large wp-image-13" alt="Centro Musical Bernardo Bessler _ Favicon" loading="lazy">								</a>
 															</div>
 				</div>
-				<div class="elementor-element elementor-element-c1bf83f elementor-align-center elementor-tablet-align-center elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="c1bf83f" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-element elementor-element-a6401e8 elementor-align-center elementor-tablet-align-center elementor-mobile-align-center elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="a6401e8" data-element_type="widget" data-widget_type="icon-list.default">
 				<div class="elementor-widget-container">
 			<link rel="stylesheet" href="./../wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">		<ul class="elementor-icon-list-items">
 							<li class="elementor-icon-list-item">
@@ -488,8 +503,8 @@ img.emoji {
 						</ul>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-b9c68d3 e-con-full elementor-hidden-desktop elementor-hidden-tablet e-flex e-con" data-id="b9c68d3" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-93b295d btnclose elementor-view-default elementor-widget elementor-widget-icon" data-id="93b295d" data-element_type="widget" data-widget_type="icon.default">
+		<div class="elementor-element elementor-element-4e91bdf e-con-full elementor-hidden-desktop elementor-hidden-tablet e-flex e-con" data-id="4e91bdf" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-3cbaa7a btnclose elementor-view-default elementor-widget elementor-widget-icon" data-id="3cbaa7a" data-element_type="widget" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
@@ -500,99 +515,42 @@ img.emoji {
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-b4927b4 e-flex e-con-boxed e-con" data-id="b4927b4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+		<div class="elementor-element elementor-element-50b3d66 e-flex e-con-boxed e-con" data-id="50b3d66" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-47d1329 e-con-full e-flex e-con" data-id="47d1329" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-22950bb elementor-widget elementor-widget-image" data-id="22950bb" data-element_type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-7c9bccc e-con-full elementor-hidden-mobile e-flex e-con" data-id="7c9bccc" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				</div>
+		<div class="elementor-element elementor-element-3d5cfa2 e-con-full e-flex e-con" data-id="3d5cfa2" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-99b293b elementor-widget elementor-widget-image" data-id="99b293b" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="30" height="18" src="./../wp-content/uploads/2023/07/uk.png" class="attachment-large size-large wp-image-616" alt="" loading="lazy">															</div>
+															<img decoding="async" width="30" height="18" src="./../wp-content/uploads/2023/07/uk.png" class="attachment-large size-large wp-image-616" alt="uk" loading="lazy">															</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-7ac2423 e-con-full e-flex e-con" data-id="7ac2423" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-fcf0f14 elementor-widget elementor-widget-image" data-id="fcf0f14" data-element_type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-8f1aaa5 e-con-full e-flex e-con" data-id="8f1aaa5" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-f7e517c elementor-widget elementor-widget-image" data-id="f7e517c" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="30" height="18" src="./../wp-content/uploads/2023/07/es.png" class="attachment-large size-large wp-image-614" alt="" loading="lazy">															</div>
+															<img decoding="async" width="30" height="18" src="./../wp-content/uploads/2023/07/es.png" class="attachment-large size-large wp-image-614" alt="es" loading="lazy">															</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-18ae273 e-con-full e-flex e-con" data-id="18ae273" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-d05eb46 elementor-widget elementor-widget-image" data-id="d05eb46" data-element_type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-6545223 e-con-full e-flex e-con" data-id="6545223" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-a668b26 elementor-widget elementor-widget-image" data-id="a668b26" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="30" height="18" src="./../wp-content/uploads/2023/07/fr.png" class="attachment-large size-large wp-image-615" alt="" loading="lazy">															</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-352652e e-con-full e-flex e-con" data-id="352652e" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-23ee5b5 elementor-widget elementor-widget-html" data-id="23ee5b5" data-element_type="widget" data-widget_type="html.default">
-				<div class="elementor-widget-container">
-			<script>document.addEventListener('DOMContentLoaded', function() {
-		const btnOpen = document.querySelector('.btnopen');
-		const btnClose = document.querySelector('.btnclose');
-		const dropdownMenu = document.querySelector('.dropdownmenu');
-		const menuLinks = document.querySelectorAll('.dropdownmenu a');
-		const pageLinks = document.querySelectorAll('a:not(.dropdownmenu a)');
-		const scrollEndPosition = window.innerHeight; // Posição em que a rolagem termina (100vh)
-
-		function closeMenu() {
-			dropdownMenu.style.marginTop = '-100vh';
-			btnOpen.classList.remove('active');
-			dropdownMenu.classList.remove('active');
-			btnOpen.blur(); // Remover foco do botão btnOpen ao fechar o menu
-		}
-		
-		btnOpen.addEventListener('click', function() {
-			const isOpen = dropdownMenu.classList.contains('active');
-			if (isOpen) {
-				closeMenu();
-			} else {
-				dropdownMenu.style.marginTop = '0';
-				scrollTo({ top: 0, behavior: 'smooth' });
-				btnOpen.classList.add('active');
-				dropdownMenu.classList.add('active');
-				btnOpen.blur(); // Remover foco do botão btnOpen ao abrir o menu
-			}
-		});
-		
-		btnClose.addEventListener('click', function() {
-			closeMenu();
-		});
-		
-		// Listen to clicks on all links inside the menu
-		menuLinks.forEach(link => {
-			link.addEventListener('click', function() {
-				closeMenu();
-			});
-		});
-	
-		// Listen to clicks on all links outside the menu (on the page)
-		pageLinks.forEach(link => {
-			link.addEventListener('click', function() {
-				closeMenu();
-			});
-		});
-
-		// Listen to scroll event and close menu when scrolled to the end of dropdownmenu
-		addEventListener('scroll', function() { // Aqui também removemos 'window.'
-			if (pageYOffset >= scrollEndPosition) { // Aqui também removemos 'window.'
-				closeMenu();
-			}
-		});
-    });</script>
-		</div>
+															<img decoding="async" width="30" height="18" src="./../wp-content/uploads/2023/07/fr.png" class="attachment-large size-large wp-image-615" alt="fr" loading="lazy">															</div>
 				</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-b009cc0 headertop e-flex e-con-boxed e-con" data-id="b009cc0" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+		<div class="elementor-element elementor-element-031ad13 headertop e-flex e-con-boxed e-con" data-id="031ad13" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-f7106ac e-con-full e-flex e-con" data-id="f7106ac" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-20f05ac elementor-widget elementor-widget-image" data-id="20f05ac" data-element_type="widget" data-widget_type="image.default">
+		<div class="elementor-element elementor-element-66814eb e-con-full e-flex e-con" data-id="66814eb" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-a3d23f8 elementor-widget elementor-widget-image" data-id="a3d23f8" data-element_type="widget" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 																<a href="./../index.html">
-							<img decoding="async" width="256" height="256" src="./../wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg" class="attachment-large size-large wp-image-13" alt="" loading="lazy">								</a>
+							<img decoding="async" width="256" height="256" src="./../wp-content/uploads/2023/07/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg" class="attachment-large size-large wp-image-13" alt="Centro Musical Bernardo Bessler _ Favicon" loading="lazy">								</a>
 															</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-cb2f0a3 e-con-full elementor-hidden-mobile e-flex e-con" data-id="cb2f0a3" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-80d140d elementor-icon-list--layout-inline elementor-align-right elementor-tablet-align-center elementor-hidden-mobile elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="80d140d" data-element_type="widget" data-widget_type="icon-list.default">
+		<div class="elementor-element elementor-element-ac5758d e-con-full elementor-hidden-mobile e-flex e-con" data-id="ac5758d" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-e12e7fd elementor-icon-list--layout-inline elementor-align-right elementor-tablet-align-center elementor-hidden-mobile elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="e12e7fd" data-element_type="widget" data-widget_type="icon-list.default">
 				<div class="elementor-widget-container">
 					<ul class="elementor-icon-list-items elementor-inline-items">
 							<li class="elementor-icon-list-item elementor-inline-item">
@@ -647,8 +605,8 @@ img.emoji {
 				</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-d5337f3 e-con-full elementor-hidden-desktop elementor-hidden-tablet e-flex e-con" data-id="d5337f3" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-31c604c btnopen elementor-view-default elementor-widget elementor-widget-icon" data-id="31c604c" data-element_type="widget" data-widget_type="icon.default">
+		<div class="elementor-element elementor-element-01a4f89 e-con-full elementor-hidden-desktop elementor-hidden-tablet e-flex e-con" data-id="01a4f89" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-ea238e1 btnopen elementor-view-default elementor-widget elementor-widget-icon" data-id="ea238e1" data-element_type="widget" data-widget_type="icon.default">
 				<div class="elementor-widget-container">
 					<div class="elementor-icon-wrapper">
 			<div class="elementor-icon">
@@ -661,7 +619,7 @@ img.emoji {
 				</div>
 		<div class="elementor-element elementor-element-0e6a569 e-flex e-con-boxed e-con" data-id="0e6a569" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
-				<div class="elementor-element elementor-element-95ad8f1 elementor-widget elementor-widget-heading" data-id="95ad8f1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-element elementor-element-95ad8f1 .footer-cmbb elementor-widget elementor-widget-heading" data-id="95ad8f1" data-element_type="widget" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.14.0 - 26-06-2023 */
 .elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style>
@@ -700,55 +658,85 @@ img.emoji {
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-1316991 e-flex e-con-boxed e-con" data-id="1316991" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+		<div class="elementor-element elementor-element-a2cfaec e-flex e-con-boxed e-con" data-id="a2cfaec" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-061f2ff e-con-full e-flex e-con" data-id="061f2ff" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-75e63f5 elementor-widget elementor-widget-html" data-id="75e63f5" data-element_type="widget" data-widget_type="html.default">
+		<div class="elementor-element elementor-element-3a0ac76 e-con-full e-flex e-con" data-id="3a0ac76" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-230d3b7 elementor-widget elementor-widget-html" data-id="230d3b7" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
 			<iframe width="560" height="400" src="https://www.youtube.com/embed/videoseries?list=PLUgGQSCOIyLesq3bXoBTVZ2VWFxO9EkiJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>		</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-414420a e-con-full e-flex e-con" data-id="414420a" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-		<div class="elementor-element elementor-element-6dd2eb0 e-flex e-con-boxed e-con" data-id="6dd2eb0" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+		<div class="elementor-element elementor-element-c6b65fb e-con-full e-flex e-con" data-id="c6b65fb" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+		<div class="elementor-element elementor-element-5f1d257 e-flex e-con-boxed e-con" data-id="5f1d257" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-dc881c0 e-con-full e-flex e-con" data-id="dc881c0" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-e7a9a4d elementor-widget elementor-widget-html" data-id="e7a9a4d" data-element_type="widget" data-widget_type="html.default">
+		<div class="elementor-element elementor-element-fa1c0cc e-con-full e-flex e-con" data-id="fa1c0cc" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-a32b700 elementor-widget elementor-widget-html" data-id="a32b700" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
-			<a href="./../wp-content/uploads/2023/07/ead1.jpg" rel="lightbox-0"><div class="fotosead1" id="foto-1"></div></a>		</div>
+			<a href="./../wp-content/uploads/2023/07/ead1.jpg" rel="lightbox-0">
+    <div class="fotosead1" id="foto-1">
+      <div class="overlaybackground">
+      </div>
+    </div>
+</a>		</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-faa2909 e-con-full e-flex e-con" data-id="faa2909" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-398a62c elementor-widget elementor-widget-html" data-id="398a62c" data-element_type="widget" data-widget_type="html.default">
+		<div class="elementor-element elementor-element-8966d1a e-con-full e-flex e-con" data-id="8966d1a" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-06b8ce5 elementor-widget elementor-widget-html" data-id="06b8ce5" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
-			<a href="./../wp-content/uploads/2023/07/ead2.jpg" rel="lightbox-1"><div class="fotosead1" id="foto-2"></div></a>		</div>
+			<a href="./../wp-content/uploads/2023/07/ead2.jpg" rel="lightbox-1">
+    <div class="fotosead1" id="foto-2">
+      <div class="overlaybackground">
+      </div>
+    </div>
+</a>		</div>
 				</div>
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-7eaa2ab e-flex e-con-boxed e-con" data-id="7eaa2ab" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+		<div class="elementor-element elementor-element-0c6e3f0 e-flex e-con-boxed e-con" data-id="0c6e3f0" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-e55a684 e-con-full e-flex e-con" data-id="e55a684" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-a0cc5aa elementor-widget elementor-widget-html" data-id="a0cc5aa" data-element_type="widget" data-widget_type="html.default">
+		<div class="elementor-element elementor-element-cc3a638 e-con-full e-flex e-con" data-id="cc3a638" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-91b7e4a elementor-widget elementor-widget-html" data-id="91b7e4a" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
-			<a href="./../wp-content/uploads/2023/07/ead3.jpg" rel="lightbox-2"><div class="fotosead2" id="foto-1"></div></a>		</div>
+			<a href="./../wp-content/uploads/2023/07/ead3.jpg" rel="lightbox-2">
+    <div class="fotosead2" id="foto-1">
+      <div class="overlaybackground">
+      </div>
+    </div>
+</a>		</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-2730a37 e-con-full e-flex e-con" data-id="2730a37" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-f668a14 elementor-widget elementor-widget-html" data-id="f668a14" data-element_type="widget" data-widget_type="html.default">
+		<div class="elementor-element elementor-element-a0bc29f e-con-full e-flex e-con" data-id="a0bc29f" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-dbe075d elementor-widget elementor-widget-html" data-id="dbe075d" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
-			<a href="./../wp-content/uploads/2023/07/ead4.jpg" rel="lightbox-3"><div class="fotosead2" id="foto-2"></div></a>		</div>
+			<a href="./../wp-content/uploads/2023/07/ead4.jpg" rel="lightbox-3">
+    <div class="fotosead2" id="foto-2">
+      <div class="overlaybackground">
+      </div>
+    </div>
+</a>		</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-b14245d e-con-full e-flex e-con" data-id="b14245d" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-c2de42b elementor-widget elementor-widget-html" data-id="c2de42b" data-element_type="widget" data-widget_type="html.default">
+		<div class="elementor-element elementor-element-1996e2c e-con-full e-flex e-con" data-id="1996e2c" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-fab3027 elementor-widget elementor-widget-html" data-id="fab3027" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
-			<a href="./../wp-content/uploads/2023/07/ead5.jpg" rel="lightbox-4"><div class="fotosead2" id="foto-3"></div></a>		</div>
+			<a href="./../wp-content/uploads/2023/07/ead4.jpg" rel="lightbox-3">
+    <div class="fotosead2" id="foto-3">
+      <div class="overlaybackground">
+      </div>
+    </div>
+</a>		</div>
 				</div>
 				</div>
-		<div class="elementor-element elementor-element-74afdbc e-con-full e-flex e-con" data-id="74afdbc" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
-				<div class="elementor-element elementor-element-3e5c548 elementor-widget elementor-widget-html" data-id="3e5c548" data-element_type="widget" data-widget_type="html.default">
+		<div class="elementor-element elementor-element-d04b406 e-con-full e-flex e-con" data-id="d04b406" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div class="elementor-element elementor-element-fffc8da elementor-widget elementor-widget-html" data-id="fffc8da" data-element_type="widget" data-widget_type="html.default">
 				<div class="elementor-widget-container">
-			<a href="./../wp-content/uploads/2023/07/ead6.jpg" rel="lightbox-5"><div class="fotosead2" id="foto-4"></div></a>		</div>
+			<a href="./../wp-content/uploads/2023/07/ead6.jpg" rel="lightbox-5">
+    <div class="fotosead2" id="foto-4">
+      <div class="overlaybackground">
+      </div>
+    </div>
+</a>		</div>
 				</div>
 				</div>
 					</div>
@@ -827,7 +815,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-b53edee e-flex e-con-boxed e-con" data-id="b53edee" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+		<div class="elementor-element elementor-element-b53edee footer-cmbb e-flex e-con-boxed e-con" data-id="b53edee" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
 					<div class="e-con-inner">
 		<div class="elementor-element elementor-element-7736182 e-con-full e-flex e-con" data-id="7736182" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
 				<div class="elementor-element elementor-element-c554d70 elementor-widget elementor-widget-text-editor" data-id="c554d70" data-element_type="widget" data-widget_type="text-editor.default">
@@ -887,7 +875,7 @@ body.elementor-page .elementor-widget-menu-anchor{margin-bottom:0}</style>		<div
 <script src="./../wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.14.1" id="elementor-frontend-modules-js"></script>
 <script src="./../wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
 <script src="./../wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
-<script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir vídeo","previous":"Anterior","next":"Próximo","close":"Fechar","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Celular em modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Celular em modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Paisagem do tablet","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.14.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"hello-theme-header-footer":true,"landing-pages":true},"urls":{"assets":".\/\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"hello_header_logo_type":"logo","hello_header_menu_layout":"horizontal","hello_footer_logo_type":"logo"},"post":{"id":750,"title":"EAD%20%E2%80%93%20Centro%20Musical%20Bernardo%20Bessler","excerpt":"","featuredImage":false}};</script>
+<script id="elementor-frontend-js-before">var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir vídeo","previous":"Anterior","next":"Próximo","close":"Fechar","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Celular em modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Celular em modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Paisagem do tablet","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.14.1","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"e_optimized_css_loading":true,"a11y_improvements":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"hello-theme-header-footer":true,"landing-pages":true},"urls":{"assets":".\/\/wp-content\/plugins\/elementor\/assets\/"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"hello_header_logo_type":"logo","hello_footer_logo_type":"logo"},"post":{"id":750,"title":"EAD%20%E2%80%93%20Centro%20Musical%20Bernardo%20Bessler","excerpt":"","featuredImage":false}};</script>
 <script src="./../wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.14.1" id="elementor-frontend-js"></script>
 	</body>
 </html>

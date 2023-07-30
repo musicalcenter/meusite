@@ -8,10 +8,10 @@
 <channel>
 	<title>
 	Comentários sobre Centro Musical Bernardo Bessler	</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<atom:link href="./" rel="self" type="application/rss+xml" />
 	<link>./../../</link>
 	<description>Escola de Música em Niterói</description>
-	<lastBuildDate>Sun, 23 Jul 2023 00:34:27 +0000</lastBuildDate>
+	<lastBuildDate>Sun, 30 Jul 2023 22:34:53 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>

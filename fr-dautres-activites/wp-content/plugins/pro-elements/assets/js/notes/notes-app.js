@@ -17,8 +17,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_panel__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/panel */ "../assets/js/app/components/panel.js");
 /* harmony import */ var _query_client__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./query-client */ "../assets/js/app/query-client.js");
 /* harmony import */ var _hooks_use_notes_config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./hooks/use-notes-config */ "../assets/js/app/hooks/use-notes-config.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-redux */ "../../../node_modules/react-redux/es/index.js");
-/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-query */ "../../../node_modules/react-query/es/index.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-redux */ "../../../node_modules/react-redux/es/index.htmlindex.js");
+/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-query */ "../../../node_modules/react-query/es/index.htmlindex.js");
 /* harmony import */ var react_query_devtools__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-query/devtools */ "../../../node_modules/react-query/devtools/index.js");
 /* harmony import */ var _context_elements__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./context/elements */ "../assets/js/app/context/elements.js");
 /* harmony import */ var _radix_ui_react_toast__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @radix-ui/react-toast */ "../../../node_modules/@radix-ui/react-toast/dist/index.module.js");
@@ -768,7 +768,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _mentions_mentions_user_list__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./mentions/mentions-user-list */ "../assets/js/app/components/mentions/mentions-user-list.js");
 /* harmony import */ var _ui_typeahead_typeahead__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ui/typeahead/typeahead */ "../assets/js/app/components/ui/typeahead/typeahead.js");
 /* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! styled-components */ "../../../node_modules/styled-components/dist/styled-components.browser.esm.js");
-/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-query */ "../../../node_modules/react-query/es/index.js");
+/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-query */ "../../../node_modules/react-query/es/index.htmlindex.js");
 /* harmony import */ var _query_client__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../query-client */ "../assets/js/app/query-client.js");
 /* harmony import */ var _ui_div_base__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ui/div-base */ "../assets/js/app/components/ui/div-base.js");
 /* provided dependency */ var __ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n")["__"];
@@ -4855,7 +4855,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "THREAD": () => (/* binding */ THREAD),
 /* harmony export */   "default": () => (/* binding */ useActiveThread)
 /* harmony export */ });
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "../../../node_modules/react-redux/es/index.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "../../../node_modules/react-redux/es/index.htmlindex.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
@@ -4992,7 +4992,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ useFormsInWritingMode)
 /* harmony export */ });
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "../../../node_modules/react-redux/es/index.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "../../../node_modules/react-redux/es/index.htmlindex.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
@@ -5181,7 +5181,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/regenerator */ "../../../node_modules/@babel/runtime/regenerator/index.js");
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _models_note__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../models/note */ "../assets/js/app/models/note.js");
-/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-query */ "../../../node_modules/react-query/es/index.js");
+/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-query */ "../../../node_modules/react-query/es/index.htmlindex.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
 
@@ -5304,7 +5304,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ useNotesFilters)
 /* harmony export */ });
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "../../../node_modules/react-redux/es/index.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-redux */ "../../../node_modules/react-redux/es/index.htmlindex.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
 
@@ -5353,7 +5353,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils */ "../assets/js/app/utils.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-query */ "../../../node_modules/react-query/es/index.js");
+/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-query */ "../../../node_modules/react-query/es/index.htmlindex.js");
 /* harmony import */ var _context_elements__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../context/elements */ "../assets/js/app/context/elements.js");
 /* harmony import */ var _use_active_thread__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./use-active-thread */ "../assets/js/app/hooks/use-active-thread.js");
 
@@ -5720,7 +5720,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-query */ "../../../node_modules/react-query/es/index.js");
+/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-query */ "../../../node_modules/react-query/es/index.htmlindex.js");
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils */ "../assets/js/app/utils.js");
 /* harmony import */ var _models_note_summary__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../models/note-summary */ "../assets/js/app/models/note-summary.js");
 /* harmony import */ var _use_notes_filters__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./use-notes-filters */ "../assets/js/app/hooks/use-notes-filters.js");
@@ -5805,7 +5805,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _models_note__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../models/note */ "../assets/js/app/models/note.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-query */ "../../../node_modules/react-query/es/index.js");
+/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-query */ "../../../node_modules/react-query/es/index.htmlindex.js");
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils */ "../assets/js/app/utils.js");
 /* harmony import */ var _use_notes_config__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./use-notes-config */ "../assets/js/app/hooks/use-notes-config.js");
 /* harmony import */ var _use_notes_filters__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./use-notes-filters */ "../assets/js/app/hooks/use-notes-filters.js");
@@ -6075,7 +6075,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils */ "../assets/js/app/utils.js");
-/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-query */ "../../../node_modules/react-query/es/index.js");
+/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-query */ "../../../node_modules/react-query/es/index.htmlindex.js");
 /* harmony import */ var _models_user__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../models/user */ "../assets/js/app/models/user.js");
 
 
@@ -6702,7 +6702,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-query */ "../../../node_modules/react-query/es/index.js");
+/* harmony import */ var react_query__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-query */ "../../../node_modules/react-query/es/index.htmlindex.js");
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new react_query__WEBPACK_IMPORTED_MODULE_0__.QueryClient({
   defaultOptions: {

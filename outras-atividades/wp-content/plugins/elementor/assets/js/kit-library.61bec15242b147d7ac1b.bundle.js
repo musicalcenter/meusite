@@ -428,9 +428,9 @@ var _index = _interopRequireDefault(__webpack_require__(/*! ./pages/index */ "..
 var _overview = _interopRequireDefault(__webpack_require__(/*! ./pages/overview/overview */ "../app/modules/kit-library/assets/js/pages/overview/overview.js"));
 var _preview = _interopRequireDefault(__webpack_require__(/*! ./pages/preview/preview */ "../app/modules/kit-library/assets/js/pages/preview/preview.js"));
 var _lastFilterContext = __webpack_require__(/*! ./context/last-filter-context */ "../app/modules/kit-library/assets/js/context/last-filter-context.js");
-var _reactQuery = __webpack_require__(/*! react-query */ "../node_modules/react-query/es/index.js");
+var _reactQuery = __webpack_require__(/*! react-query */ "../node_modules/react-query/es/index.htmlindex.js");
 var _devtools = __webpack_require__(/*! react-query/devtools */ "../node_modules/react-query/devtools/index.js");
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
 var _settingsContext = __webpack_require__(/*! ./context/settings-context */ "../app/modules/kit-library/assets/js/context/settings-context.js");
 var queryClient = new _reactQuery.QueryClient({
   defaultOptions: {
@@ -481,7 +481,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = ApplyKitDialog;
 var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
 var _appUi = __webpack_require__(/*! @elementor/app-ui */ "@elementor/app-ui");
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
@@ -1385,7 +1385,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = KitList;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
 var _kit = _interopRequireDefault(__webpack_require__(/*! ../models/kit */ "../app/modules/kit-library/assets/js/models/kit.js"));
 var _kitListItem = _interopRequireDefault(__webpack_require__(/*! ./kit-list-item */ "../app/modules/kit-library/assets/js/components/kit-list-item.js"));
 var _newPageKitListItem = _interopRequireDefault(__webpack_require__(/*! ../../../../onboarding/assets/js/components/new-page-kit-list-item */ "../app/modules/onboarding/assets/js/components/new-page-kit-list-item.js"));
@@ -1441,7 +1441,7 @@ exports["default"] = HeaderBackButton;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 var _appUi = __webpack_require__(/*! @elementor/app-ui */ "@elementor/app-ui");
 var _lastFilterContext = __webpack_require__(/*! ../../context/last-filter-context */ "../app/modules/kit-library/assets/js/context/last-filter-context.js");
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
 var _appsEventTracking = __webpack_require__(/*! elementor-app/event-track/apps-event-tracking */ "../app/assets/js/event-track/apps-event-tracking.js");
 __webpack_require__(/*! ./header-back-button.scss */ "../app/modules/kit-library/assets/js/components/layout/header-back-button.scss");
 function HeaderBackButton(props) {
@@ -2171,7 +2171,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports.KEY = void 0;
 exports["default"] = useContentTypes;
 var _contentType = _interopRequireDefault(__webpack_require__(/*! ../models/content-type */ "../app/modules/kit-library/assets/js/models/content-type.js"));
-var _reactQuery = __webpack_require__(/*! react-query */ "../node_modules/react-query/es/index.js");
+var _reactQuery = __webpack_require__(/*! react-query */ "../node_modules/react-query/es/index.htmlindex.js");
 var KEY = 'content-types';
 
 /**
@@ -2262,7 +2262,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = useDownloadLinkMutation;
 var _react = __webpack_require__(/*! react */ "react");
-var _reactQuery = __webpack_require__(/*! react-query */ "../node_modules/react-query/es/index.js");
+var _reactQuery = __webpack_require__(/*! react-query */ "../node_modules/react-query/es/index.htmlindex.js");
 function useDownloadLinkMutation(model, _ref) {
   var onError = _ref.onError,
     onSuccess = _ref.onSuccess;
@@ -2388,7 +2388,7 @@ exports.useKitFavoritesMutations = useKitFavoritesMutations;
 var _react = __webpack_require__(/*! react */ "react");
 var _useKits = __webpack_require__(/*! ../hooks/use-kits */ "../app/modules/kit-library/assets/js/hooks/use-kits.js");
 var _useKit = __webpack_require__(/*! ../hooks/use-kit */ "../app/modules/kit-library/assets/js/hooks/use-kit.js");
-var _reactQuery = __webpack_require__(/*! react-query */ "../node_modules/react-query/es/index.js");
+var _reactQuery = __webpack_require__(/*! react-query */ "../node_modules/react-query/es/index.htmlindex.js");
 function useKitFavoritesMutations() {
   var queryClient = (0, _reactQuery.useQueryClient)();
   var onSuccess = (0, _react.useCallback)(function (_ref) {
@@ -2466,7 +2466,7 @@ var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runt
 var _kit = _interopRequireDefault(__webpack_require__(/*! ../models/kit */ "../app/modules/kit-library/assets/js/models/kit.js"));
 var _useKits = __webpack_require__(/*! ./use-kits */ "../app/modules/kit-library/assets/js/hooks/use-kits.js");
 var _react = __webpack_require__(/*! react */ "react");
-var _reactQuery = __webpack_require__(/*! react-query */ "../node_modules/react-query/es/index.js");
+var _reactQuery = __webpack_require__(/*! react-query */ "../node_modules/react-query/es/index.htmlindex.js");
 var KEY = 'kit';
 exports.KEY = KEY;
 function useKit(id) {
@@ -2547,7 +2547,7 @@ var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/run
 var _kit = _interopRequireDefault(__webpack_require__(/*! ../models/kit */ "../app/modules/kit-library/assets/js/models/kit.js"));
 var _useSelectedTaxonomies = _interopRequireDefault(__webpack_require__(/*! ./use-selected-taxonomies */ "../app/modules/kit-library/assets/js/hooks/use-selected-taxonomies.js"));
 var _taxonomy = __webpack_require__(/*! ../models/taxonomy */ "../app/modules/kit-library/assets/js/models/taxonomy.js");
-var _reactQuery = __webpack_require__(/*! react-query */ "../node_modules/react-query/es/index.js");
+var _reactQuery = __webpack_require__(/*! react-query */ "../node_modules/react-query/es/index.htmlindex.js");
 var _react = __webpack_require__(/*! react */ "react");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -2790,7 +2790,7 @@ exports["default"] = useTaxonomies;
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "../node_modules/@babel/runtime/helpers/defineProperty.js"));
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../node_modules/@babel/runtime/helpers/slicedToArray.js"));
 var _taxonomy = _interopRequireDefault(__webpack_require__(/*! ../models/taxonomy */ "../app/modules/kit-library/assets/js/models/taxonomy.js"));
-var _reactQuery = __webpack_require__(/*! react-query */ "../node_modules/react-query/es/index.js");
+var _reactQuery = __webpack_require__(/*! react-query */ "../node_modules/react-query/es/index.htmlindex.js");
 var _react = __webpack_require__(/*! react */ "react");
 function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
 function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { (0, _defineProperty2.default)(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
@@ -3234,7 +3234,7 @@ exports["default"] = Favorites;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 var _index = _interopRequireDefault(__webpack_require__(/*! ../index/index */ "../app/modules/kit-library/assets/js/pages/index/index.js"));
 var _errorScreen = _interopRequireDefault(__webpack_require__(/*! ../../components/error-screen */ "../app/modules/kit-library/assets/js/components/error-screen.js"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
 function Favorites(props) {
   var navigate = (0, _router.useNavigate)();
   var indexNotResultsFavorites = /*#__PURE__*/_react.default.createElement(_errorScreen.default
@@ -3291,7 +3291,7 @@ var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../node_modules/@babel/runtime/helpers/slicedToArray.js"));
 var _header = _interopRequireDefault(__webpack_require__(/*! ../../components/layout/header */ "../app/modules/kit-library/assets/js/components/layout/header.js"));
 var _appUi = __webpack_require__(/*! @elementor/app-ui */ "@elementor/app-ui");
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
 var _popoverDialog = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/popover-dialog/popover-dialog */ "../app/assets/js/ui/popover-dialog/popover-dialog.js"));
 var _appsEventTracking = __webpack_require__(/*! elementor-app/event-track/apps-event-tracking */ "../app/assets/js/event-track/apps-event-tracking.js");
 __webpack_require__(/*! ./index-header.scss */ "../app/modules/kit-library/assets/js/pages/index/index-header.scss");
@@ -3488,7 +3488,7 @@ var _usePageTitle = _interopRequireDefault(__webpack_require__(/*! elementor-app
 var _useTaxonomies2 = _interopRequireDefault(__webpack_require__(/*! ../../hooks/use-taxonomies */ "../app/modules/kit-library/assets/js/hooks/use-taxonomies.js"));
 var _appUi = __webpack_require__(/*! @elementor/app-ui */ "@elementor/app-ui");
 var _lastFilterContext = __webpack_require__(/*! ../../context/last-filter-context */ "../app/modules/kit-library/assets/js/context/last-filter-context.js");
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
 var _appsEventTracking = __webpack_require__(/*! elementor-app/event-track/apps-event-tracking */ "../app/assets/js/event-track/apps-event-tracking.js");
 __webpack_require__(/*! ./index.scss */ "../app/modules/kit-library/assets/js/pages/index/index.scss");
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
@@ -3995,7 +3995,7 @@ exports["default"] = OverviewTaxonomyBadge;
 var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
 var _badge = _interopRequireDefault(__webpack_require__(/*! ../../components/badge */ "../app/modules/kit-library/assets/js/components/badge.js"));
 var _useTaxonomies2 = _interopRequireDefault(__webpack_require__(/*! ../../hooks/use-taxonomies */ "../app/modules/kit-library/assets/js/hooks/use-taxonomies.js"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function OverviewTaxonomyBadge(props) {
@@ -4055,7 +4055,7 @@ var _overviewSidebar = _interopRequireDefault(__webpack_require__(/*! ./overview
 var _useKit2 = _interopRequireDefault(__webpack_require__(/*! ../../hooks/use-kit */ "../app/modules/kit-library/assets/js/hooks/use-kit.js"));
 var _useKitDocumentByType2 = _interopRequireDefault(__webpack_require__(/*! ../../hooks/use-kit-document-by-type */ "../app/modules/kit-library/assets/js/hooks/use-kit-document-by-type.js"));
 var _usePageTitle = _interopRequireDefault(__webpack_require__(/*! elementor-app/hooks/use-page-title */ "../app/assets/js/hooks/use-page-title.js"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
 var _appsEventTracking = __webpack_require__(/*! elementor-app/event-track/apps-event-tracking */ "../app/assets/js/event-track/apps-event-tracking.js");
 __webpack_require__(/*! ./overview.scss */ "../app/modules/kit-library/assets/js/pages/overview/overview.scss");
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
@@ -4270,7 +4270,7 @@ var _previewResponsiveControls = _interopRequireDefault(__webpack_require__(/*! 
 var _useKit2 = _interopRequireDefault(__webpack_require__(/*! ../../hooks/use-kit */ "../app/modules/kit-library/assets/js/hooks/use-kit.js"));
 var _usePageTitle = _interopRequireDefault(__webpack_require__(/*! elementor-app/hooks/use-page-title */ "../app/assets/js/hooks/use-page-title.js"));
 var _previewIframe = __webpack_require__(/*! ./preview-iframe */ "../app/modules/kit-library/assets/js/pages/preview/preview-iframe.js");
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
 var _appsEventTracking = __webpack_require__(/*! elementor-app/event-track/apps-event-tracking */ "../app/assets/js/event-track/apps-event-tracking.js");
 __webpack_require__(/*! ./preview.scss */ "../app/modules/kit-library/assets/js/pages/preview/preview.scss");
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function _getRequireWildcardCache(nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }

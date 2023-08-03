@@ -9,10 +9,10 @@
 
 <channel>
 	<title>Centro Musical Bernardo Bessler</title>
-	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
-	<link>./../</link>
+	<atom:link href="httpsmusicalcenter.net/feed/" rel="self" type="application/rss+xml" />
+	<link>httpsmusicalcenter.net</link>
 	<description></description>
-	<lastBuildDate>Thu, 03 Aug 2023 03:54:11 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 03 Aug 2023 13:34:16 +0000</lastBuildDate>
 	<language>pt-BR</language>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
@@ -21,9 +21,9 @@
 	<generator>https://wordpress.org/?v=6.2.2</generator>
 
 <image>
-	<url>./../wp-content/uploads/2023/08/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg</url>
+	<url>httpsmusicalcenter.net/wp-content/uploads/2023/08/Centro-Musical-Bernardo-Bessler-_-Favicon.jpg</url>
 	<title>Centro Musical Bernardo Bessler</title>
-	<link>./../</link>
+	<link>httpsmusicalcenter.net</link>
 	<width>32</width>
 	<height>32</height>
 </image> 

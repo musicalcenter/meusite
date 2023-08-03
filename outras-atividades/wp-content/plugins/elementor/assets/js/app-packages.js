@@ -242,9 +242,9 @@
 
 /***/ }),
 
-/***/ "../node_modules/@reach/router/es/index.htmlindex.js":
+/***/ "../node_modules/@reach/router/es/index.js":
 /*!*************************************************!*\
-  !*** ../node_modules/@reach/router/es/index.htmlindex.js ***!
+  !*** ../node_modules/@reach/router/es/index.js ***!
   \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -279,8 +279,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var create_react_context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! create-react-context */ "../node_modules/@reach/router/node_modules/create-react-context/lib/index.js");
 /* harmony import */ var create_react_context__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(create_react_context__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_lifecycles_compat__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-lifecycles-compat */ "../node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js");
-/* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./lib/utils */ "../node_modules/@reach/router/es/index.htmllib/utils.js");
-/* harmony import */ var _lib_history__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./lib/history */ "../node_modules/@reach/router/es/index.htmllib/history.js");
+/* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./lib/utils */ "../node_modules/@reach/router/es/lib/utils.js");
+/* harmony import */ var _lib_history__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./lib/history */ "../node_modules/@reach/router/es/lib/history.js");
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -999,9 +999,9 @@ var shouldNavigate = function shouldNavigate(event) {
 
 /***/ }),
 
-/***/ "../node_modules/@reach/router/es/index.htmllib/history.js":
+/***/ "../node_modules/@reach/router/es/lib/history.js":
 /*!*******************************************************!*\
-  !*** ../node_modules/@reach/router/es/index.htmllib/history.js ***!
+  !*** ../node_modules/@reach/router/es/lib/history.js ***!
   \*******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1199,9 +1199,9 @@ var navigate = globalHistory.navigate;
 
 /***/ }),
 
-/***/ "../node_modules/@reach/router/es/index.htmllib/utils.js":
+/***/ "../node_modules/@reach/router/es/lib/utils.js":
 /*!*****************************************************!*\
-  !*** ../node_modules/@reach/router/es/index.htmllib/utils.js ***!
+  !*** ../node_modules/@reach/router/es/lib/utils.js ***!
   \*****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -4492,7 +4492,7 @@ var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/he
 __webpack_require__(/*! ./menu.scss */ "../app/assets/js/ui/menu/menu.scss");
 var _button = _interopRequireDefault(__webpack_require__(/*! ../molecules/button */ "../app/assets/js/ui/molecules/button.js"));
 var _router = _interopRequireDefault(__webpack_require__(/*! @elementor/router */ "@elementor/router"));
-var _router2 = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router2 = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 function Menu(props) {
   var ActionButton = function ActionButton(itemProps) {
     if (!props.actionButton) {
@@ -4868,7 +4868,7 @@ var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/h
 var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "../node_modules/@babel/runtime/helpers/possibleConstructorReturn.js"));
 var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "../node_modules/@babel/runtime/helpers/getPrototypeOf.js"));
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "../node_modules/@babel/runtime/helpers/defineProperty.js"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _router2 = _interopRequireDefault(__webpack_require__(/*! @elementor/router */ "@elementor/router"));
 var _icon = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/icon */ "../app/assets/js/ui/atoms/icon.js"));
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2.default)(this, result); }; }
@@ -5027,7 +5027,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = InlineLink;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _router2 = _interopRequireDefault(__webpack_require__(/*! @elementor/router */ "@elementor/router"));
 var _utils = __webpack_require__(/*! elementor-app/utils/utils.js */ "../app/assets/js/utils/utils.js");
 __webpack_require__(/*! ./inline-link.scss */ "../app/assets/js/ui/molecules/inline-link.scss");
@@ -5801,7 +5801,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = AllPartsButton;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 var _menuItem = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/menu/menu-item */ "../app/assets/js/ui/menu/menu-item.js"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 function AllPartsButton(props) {
   var activePathname = '/site-editor/templates';
   return /*#__PURE__*/_react.default.createElement(_router.Match, {

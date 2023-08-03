@@ -63,9 +63,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "unwrapResult": () => (/* binding */ unwrapResult)
 /* harmony export */ });
 /* harmony import */ var immer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! immer */ "../node_modules/immer/dist/immer.esm.mjs");
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "../node_modules/redux/es/index.htmlredux.js");
-/* harmony import */ var reselect__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reselect */ "../node_modules/reselect/es/index.htmlindex.js");
-/* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! redux-thunk */ "../node_modules/redux-thunk/es/index.htmlindex.js");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! redux */ "../node_modules/redux/es/redux.js");
+/* harmony import */ var reselect__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reselect */ "../node_modules/reselect/es/index.js");
+/* harmony import */ var redux_thunk__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! redux-thunk */ "../node_modules/redux-thunk/es/index.js");
 var __extends = (undefined && undefined.__extends) || (function () {
     var extendStatics = function (d, b) {
         extendStatics = Object.setPrototypeOf ||
@@ -53703,9 +53703,9 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "../node_modules/redux-thunk/es/index.htmlindex.js":
+/***/ "../node_modules/redux-thunk/es/index.js":
 /*!***********************************************!*\
-  !*** ../node_modules/redux-thunk/es/index.htmlindex.js ***!
+  !*** ../node_modules/redux-thunk/es/index.js ***!
   \***********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -53749,9 +53749,9 @@ thunk.withExtraArgument = createThunkMiddleware;
 
 /***/ }),
 
-/***/ "../node_modules/redux/es/index.htmlredux.js":
+/***/ "../node_modules/redux/es/redux.js":
 /*!*****************************************!*\
-  !*** ../node_modules/redux/es/index.htmlredux.js ***!
+  !*** ../node_modules/redux/es/redux.js ***!
   \*****************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -54476,9 +54476,9 @@ function applyMiddleware() {
 
 /***/ }),
 
-/***/ "../node_modules/reselect/es/index.htmldefaultMemoize.js":
+/***/ "../node_modules/reselect/es/defaultMemoize.js":
 /*!*****************************************************!*\
-  !*** ../node_modules/reselect/es/index.htmldefaultMemoize.js ***!
+  !*** ../node_modules/reselect/es/defaultMemoize.js ***!
   \*****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -54639,9 +54639,9 @@ function defaultMemoize(func, equalityCheckOrOptions) {
 
 /***/ }),
 
-/***/ "../node_modules/reselect/es/index.htmlindex.js":
+/***/ "../node_modules/reselect/es/index.js":
 /*!********************************************!*\
-  !*** ../node_modules/reselect/es/index.htmlindex.js ***!
+  !*** ../node_modules/reselect/es/index.js ***!
   \********************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -54654,7 +54654,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "defaultEqualityCheck": () => (/* reexport safe */ _defaultMemoize__WEBPACK_IMPORTED_MODULE_0__.defaultEqualityCheck),
 /* harmony export */   "defaultMemoize": () => (/* reexport safe */ _defaultMemoize__WEBPACK_IMPORTED_MODULE_0__.defaultMemoize)
 /* harmony export */ });
-/* harmony import */ var _defaultMemoize__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./defaultMemoize */ "../node_modules/reselect/es/index.htmldefaultMemoize.js");
+/* harmony import */ var _defaultMemoize__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./defaultMemoize */ "../node_modules/reselect/es/defaultMemoize.js");
 
 
 

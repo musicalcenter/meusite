@@ -2,9 +2,9 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "../node_modules/@reach/router/es/index.htmlindex.js":
+/***/ "../node_modules/@reach/router/es/index.js":
 /*!*************************************************!*\
-  !*** ../node_modules/@reach/router/es/index.htmlindex.js ***!
+  !*** ../node_modules/@reach/router/es/index.js ***!
   \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -39,8 +39,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var create_react_context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! create-react-context */ "../node_modules/@reach/router/node_modules/create-react-context/lib/index.js");
 /* harmony import */ var create_react_context__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(create_react_context__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_lifecycles_compat__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-lifecycles-compat */ "../node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js");
-/* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./lib/utils */ "../node_modules/@reach/router/es/index.htmllib/utils.js");
-/* harmony import */ var _lib_history__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./lib/history */ "../node_modules/@reach/router/es/index.htmllib/history.js");
+/* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./lib/utils */ "../node_modules/@reach/router/es/lib/utils.js");
+/* harmony import */ var _lib_history__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./lib/history */ "../node_modules/@reach/router/es/lib/history.js");
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -759,9 +759,9 @@ var shouldNavigate = function shouldNavigate(event) {
 
 /***/ }),
 
-/***/ "../node_modules/@reach/router/es/index.htmllib/history.js":
+/***/ "../node_modules/@reach/router/es/lib/history.js":
 /*!*******************************************************!*\
-  !*** ../node_modules/@reach/router/es/index.htmllib/history.js ***!
+  !*** ../node_modules/@reach/router/es/lib/history.js ***!
   \*******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -959,9 +959,9 @@ var navigate = globalHistory.navigate;
 
 /***/ }),
 
-/***/ "../node_modules/@reach/router/es/index.htmllib/utils.js":
+/***/ "../node_modules/@reach/router/es/lib/utils.js":
 /*!*****************************************************!*\
-  !*** ../node_modules/@reach/router/es/index.htmllib/utils.js ***!
+  !*** ../node_modules/@reach/router/es/lib/utils.js ***!
   \*****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1511,7 +1511,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = App;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _noticesContext = __webpack_require__(/*! ./context/notices-context */ "../modules/forms/submissions/assets/js/admin/context/notices-context.js");
 var _settingsContext = __webpack_require__(/*! ./context/settings-context */ "../modules/forms/submissions/assets/js/admin/context/settings-context.js");
 var _notices = _interopRequireDefault(__webpack_require__(/*! ./components/notices */ "../modules/forms/submissions/assets/js/admin/components/notices.js"));
@@ -1997,7 +1997,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = Link;
 var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
 var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/extends */ "../node_modules/@babel/runtime/helpers/extends.js"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 function _getRequireWildcardCache(nodeInterop) { if (typeof WeakMap !== "function") return null; var cacheBabelInterop = new WeakMap(); var cacheNodeInterop = new WeakMap(); return (_getRequireWildcardCache = function (nodeInterop) { return nodeInterop ? cacheNodeInterop : cacheBabelInterop; })(nodeInterop); }
 function _interopRequireWildcard(obj, nodeInterop) { if (!nodeInterop && obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(nodeInterop); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 function Link(props) {
@@ -4455,7 +4455,7 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 exports["default"] = useRouterQueryString;
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 const {
   useEffect,
   useState
@@ -5024,7 +5024,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = Item;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 var _wpTable = _interopRequireDefault(__webpack_require__(/*! ../components/wp-table */ "../modules/forms/submissions/assets/js/admin/components/wp-table/index.js"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _noticesContext = __webpack_require__(/*! ../context/notices-context */ "../modules/forms/submissions/assets/js/admin/context/notices-context.js");
 var _postBox = _interopRequireDefault(__webpack_require__(/*! ../components/post-box */ "../modules/forms/submissions/assets/js/admin/components/post-box.js"));
 var _formActionsLog = _interopRequireDefault(__webpack_require__(/*! ../components/form-actions-log */ "../modules/forms/submissions/assets/js/admin/components/form-actions-log.js"));

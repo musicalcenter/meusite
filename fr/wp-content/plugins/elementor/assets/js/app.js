@@ -1152,9 +1152,9 @@ var unitlessKeys = {
 
 /***/ }),
 
-/***/ "../node_modules/@reach/router/es/index.htmlindex.js":
+/***/ "../node_modules/@reach/router/es/index.js":
 /*!*************************************************!*\
-  !*** ../node_modules/@reach/router/es/index.htmlindex.js ***!
+  !*** ../node_modules/@reach/router/es/index.js ***!
   \*************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -1189,8 +1189,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var create_react_context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! create-react-context */ "../node_modules/@reach/router/node_modules/create-react-context/lib/index.js");
 /* harmony import */ var create_react_context__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(create_react_context__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var react_lifecycles_compat__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-lifecycles-compat */ "../node_modules/react-lifecycles-compat/react-lifecycles-compat.es.js");
-/* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./lib/utils */ "../node_modules/@reach/router/es/index.htmllib/utils.js");
-/* harmony import */ var _lib_history__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./lib/history */ "../node_modules/@reach/router/es/index.htmllib/history.js");
+/* harmony import */ var _lib_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./lib/utils */ "../node_modules/@reach/router/es/lib/utils.js");
+/* harmony import */ var _lib_history__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./lib/history */ "../node_modules/@reach/router/es/lib/history.js");
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
@@ -1909,9 +1909,9 @@ var shouldNavigate = function shouldNavigate(event) {
 
 /***/ }),
 
-/***/ "../node_modules/@reach/router/es/index.htmllib/history.js":
+/***/ "../node_modules/@reach/router/es/lib/history.js":
 /*!*******************************************************!*\
-  !*** ../node_modules/@reach/router/es/index.htmllib/history.js ***!
+  !*** ../node_modules/@reach/router/es/lib/history.js ***!
   \*******************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -2109,9 +2109,9 @@ var navigate = globalHistory.navigate;
 
 /***/ }),
 
-/***/ "../node_modules/@reach/router/es/index.htmllib/utils.js":
+/***/ "../node_modules/@reach/router/es/lib/utils.js":
 /*!*****************************************************!*\
-  !*** ../node_modules/@reach/router/es/index.htmllib/utils.js ***!
+  !*** ../node_modules/@reach/router/es/lib/utils.js ***!
   \*****************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -2707,7 +2707,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = App;
 var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
 var _router = _interopRequireDefault(__webpack_require__(/*! @elementor/router */ "@elementor/router"));
-var _router2 = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router2 = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _reachRouterHashHistory = __webpack_require__(/*! reach-router-hash-history */ "../node_modules/reach-router-hash-history/index.js");
 var _notFound = _interopRequireDefault(__webpack_require__(/*! elementor-app/pages/not-found */ "../app/assets/js/pages/not-found.js"));
 var _index = _interopRequireDefault(__webpack_require__(/*! elementor-app/pages/index */ "../app/assets/js/pages/index.js"));
@@ -4342,7 +4342,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = Index;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _actionsMap = _interopRequireDefault(__webpack_require__(/*! elementor-app/url-actions/actions-map */ "../app/assets/js/url-actions/actions-map.js"));
 function Index() {
   var _elementorAppConfig$m;
@@ -5772,7 +5772,7 @@ var _inherits2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/h
 var _possibleConstructorReturn2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/possibleConstructorReturn */ "../node_modules/@babel/runtime/helpers/possibleConstructorReturn.js"));
 var _getPrototypeOf2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/getPrototypeOf */ "../node_modules/@babel/runtime/helpers/getPrototypeOf.js"));
 var _defineProperty2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/defineProperty */ "../node_modules/@babel/runtime/helpers/defineProperty.js"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _router2 = _interopRequireDefault(__webpack_require__(/*! @elementor/router */ "@elementor/router"));
 var _icon = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/atoms/icon */ "../app/assets/js/ui/atoms/icon.js"));
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = (0, _getPrototypeOf2.default)(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = (0, _getPrototypeOf2.default)(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return (0, _possibleConstructorReturn2.default)(this, result); }; }
@@ -5931,7 +5931,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = InlineLink;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _router2 = _interopRequireDefault(__webpack_require__(/*! @elementor/router */ "@elementor/router"));
 var _utils = __webpack_require__(/*! elementor-app/utils/utils.js */ "../app/assets/js/utils/utils.js");
 __webpack_require__(/*! ./inline-link.scss */ "../app/assets/js/ui/molecules/inline-link.scss");
@@ -7210,7 +7210,7 @@ exports["default"] = Export;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 var _sharedContextProvider = _interopRequireDefault(__webpack_require__(/*! ./context/shared-context/shared-context-provider */ "../app/modules/import-export/assets/js/context/shared-context/shared-context-provider.js"));
 var _exportContextProvider = _interopRequireDefault(__webpack_require__(/*! ./context/export-context/export-context-provider */ "../app/modules/import-export/assets/js/context/export-context/export-context-provider.js"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _router2 = _interopRequireDefault(__webpack_require__(/*! @elementor/router */ "@elementor/router"));
 var _exportKit = _interopRequireDefault(__webpack_require__(/*! ./pages/export/export-kit/export-kit */ "../app/modules/import-export/assets/js/pages/export/export-kit/export-kit.js"));
 var _exportComplete = _interopRequireDefault(__webpack_require__(/*! ./pages/export/export-complete/export-complete */ "../app/modules/import-export/assets/js/pages/export/export-complete/export-complete.js"));
@@ -7739,7 +7739,7 @@ exports["default"] = Import;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 var _sharedContextProvider = _interopRequireDefault(__webpack_require__(/*! ./context/shared-context/shared-context-provider */ "../app/modules/import-export/assets/js/context/shared-context/shared-context-provider.js"));
 var _importContextProvider = _interopRequireDefault(__webpack_require__(/*! ./context/import-context/import-context-provider */ "../app/modules/import-export/assets/js/context/import-context/import-context-provider.js"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _router2 = _interopRequireDefault(__webpack_require__(/*! @elementor/router */ "@elementor/router"));
 var _importKit = _interopRequireDefault(__webpack_require__(/*! ./pages/import/import-kit/import-kit */ "../app/modules/import-export/assets/js/pages/import/import-kit/import-kit.js"));
 var _importContent = _interopRequireDefault(__webpack_require__(/*! ./pages/import/import-content/import-content */ "../app/modules/import-export/assets/js/pages/import/import-content/import-content.js"));
@@ -7836,7 +7836,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = ExportComplete;
 var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _exportContextProvider = __webpack_require__(/*! ../../../context/export-context/export-context-provider */ "../app/modules/import-export/assets/js/context/export-context/export-context-provider.js");
 var _layout = _interopRequireDefault(__webpack_require__(/*! ../../../templates/layout */ "../app/modules/import-export/assets/js/templates/layout.js"));
 var _actionsFooter = _interopRequireDefault(__webpack_require__(/*! ../../../shared/actions-footer/actions-footer */ "../app/modules/import-export/assets/js/shared/actions-footer/actions-footer.js"));
@@ -8292,7 +8292,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = ExportPlugins;
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../node_modules/@babel/runtime/helpers/slicedToArray.js"));
 var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _sharedContextProvider = __webpack_require__(/*! ../../../context/shared-context/shared-context-provider */ "../app/modules/import-export/assets/js/context/shared-context/shared-context-provider.js");
 var _exportContextProvider = __webpack_require__(/*! ../../../context/export-context/export-context-provider */ "../app/modules/import-export/assets/js/context/export-context/export-context-provider.js");
 var _layout = _interopRequireDefault(__webpack_require__(/*! ../../../templates/layout */ "../app/modules/import-export/assets/js/templates/layout.js"));
@@ -8377,7 +8377,7 @@ exports["default"] = ExportProcess;
 var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
 var _toConsumableArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/toConsumableArray */ "../node_modules/@babel/runtime/helpers/toConsumableArray.js"));
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../node_modules/@babel/runtime/helpers/slicedToArray.js"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _sharedContextProvider = __webpack_require__(/*! ../../../context/shared-context/shared-context-provider */ "../app/modules/import-export/assets/js/context/shared-context/shared-context-provider.js");
 var _exportContextProvider = __webpack_require__(/*! ../../../context/export-context/export-context-provider */ "../app/modules/import-export/assets/js/context/export-context/export-context-provider.js");
 var _layout = _interopRequireDefault(__webpack_require__(/*! ../../../templates/layout */ "../app/modules/import-export/assets/js/templates/layout.js"));
@@ -8527,7 +8527,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = useImportActions;
 var _react = __webpack_require__(/*! react */ "react");
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _sharedContextProvider = __webpack_require__(/*! ../../../context/shared-context/shared-context-provider */ "../app/modules/import-export/assets/js/context/shared-context/shared-context-provider.js");
 var _useAction2 = _interopRequireDefault(__webpack_require__(/*! elementor-app/hooks/use-action */ "../app/assets/js/hooks/use-action.js"));
 function useImportActions() {
@@ -8783,7 +8783,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = ImportComplete;
 var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _sharedContextProvider = __webpack_require__(/*! ../../../context/shared-context/shared-context-provider */ "../app/modules/import-export/assets/js/context/shared-context/shared-context-provider.js");
 var _importContextProvider = __webpack_require__(/*! ../../../context/import-context/import-context-provider */ "../app/modules/import-export/assets/js/context/import-context/import-context-provider.js");
 var _layout = _interopRequireDefault(__webpack_require__(/*! ../../../templates/layout */ "../app/modules/import-export/assets/js/templates/layout.js"));
@@ -8983,7 +8983,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = ImportContentFooter;
 var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _actionsFooter = _interopRequireDefault(__webpack_require__(/*! ../../../../../shared/actions-footer/actions-footer */ "../app/modules/import-export/assets/js/shared/actions-footer/actions-footer.js"));
 var _button = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/molecules/button */ "../app/assets/js/ui/molecules/button.js"));
 function ImportContentFooter(_ref) {
@@ -9198,7 +9198,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = ImportKit;
 var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../node_modules/@babel/runtime/helpers/slicedToArray.js"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _hooks = __webpack_require__(/*! @elementor/hooks */ "@elementor/hooks");
 var _sharedContextProvider = __webpack_require__(/*! ../../../context/shared-context/shared-context-provider */ "../app/modules/import-export/assets/js/context/shared-context/shared-context-provider.js");
 var _importContextProvider = __webpack_require__(/*! ../../../context/import-context/import-context-provider */ "../app/modules/import-export/assets/js/context/import-context/import-context-provider.js");
@@ -9629,7 +9629,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = ImportPluginsActivation;
 var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _importContextProvider = __webpack_require__(/*! ../../../context/import-context/import-context-provider */ "../app/modules/import-export/assets/js/context/import-context/import-context-provider.js");
 var _sharedContextProvider = __webpack_require__(/*! ../../../context/shared-context/shared-context-provider */ "../app/modules/import-export/assets/js/context/shared-context/shared-context-provider.js");
 var _layout = _interopRequireDefault(__webpack_require__(/*! ../../../templates/layout */ "../app/modules/import-export/assets/js/templates/layout.js"));
@@ -10066,7 +10066,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = ImportPlugins;
 var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _importContextProvider = __webpack_require__(/*! ../../../context/import-context/import-context-provider */ "../app/modules/import-export/assets/js/context/import-context/import-context-provider.js");
 var _sharedContextProvider = __webpack_require__(/*! ../../../context/shared-context/shared-context-provider */ "../app/modules/import-export/assets/js/context/shared-context/shared-context-provider.js");
 var _layout = _interopRequireDefault(__webpack_require__(/*! ../../../templates/layout */ "../app/modules/import-export/assets/js/templates/layout.js"));
@@ -10214,7 +10214,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = ImportProcess;
 var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../node_modules/@babel/runtime/helpers/slicedToArray.js"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _sharedContextProvider = __webpack_require__(/*! ../../../context/shared-context/shared-context-provider */ "../app/modules/import-export/assets/js/context/shared-context/shared-context-provider.js");
 var _importContextProvider = __webpack_require__(/*! ../../../context/import-context/import-context-provider */ "../app/modules/import-export/assets/js/context/import-context/import-context-provider.js");
 var _layout = _interopRequireDefault(__webpack_require__(/*! ../../../templates/layout */ "../app/modules/import-export/assets/js/templates/layout.js"));
@@ -10681,7 +10681,7 @@ Object.defineProperty(exports, "__esModule", ({
 exports["default"] = ImportResolver;
 var _slicedToArray2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime/helpers/slicedToArray */ "../node_modules/@babel/runtime/helpers/slicedToArray.js"));
 var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _sharedContextProvider = __webpack_require__(/*! ../../../context/shared-context/shared-context-provider */ "../app/modules/import-export/assets/js/context/shared-context/shared-context-provider.js");
 var _importContextProvider = __webpack_require__(/*! ../../../context/import-context/import-context-provider */ "../app/modules/import-export/assets/js/context/import-context/import-context-provider.js");
 var _layout = _interopRequireDefault(__webpack_require__(/*! ../../../templates/layout */ "../app/modules/import-export/assets/js/templates/layout.js"));
@@ -12089,7 +12089,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = ProcessFailedDialog;
 var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
-var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.htmlindex.js");
+var _router = __webpack_require__(/*! @reach/router */ "../node_modules/@reach/router/es/index.js");
 var _dialog = _interopRequireDefault(__webpack_require__(/*! elementor-app/ui/dialog/dialog */ "../app/assets/js/ui/dialog/dialog.js"));
 var _useQueryParams = _interopRequireDefault(__webpack_require__(/*! elementor-app/hooks/use-query-params */ "../app/assets/js/hooks/use-query-params.js"));
 var _useAction = _interopRequireDefault(__webpack_require__(/*! elementor-app/hooks/use-action */ "../app/assets/js/hooks/use-action.js"));

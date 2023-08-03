@@ -8,10 +8,10 @@
 <channel>
 	<title>
 	Comentários sobre Centro Musical Bernardo Bessler	</title>
-	<atom:link href="httpsmusicalcenter.net/comments/feed/" rel="self" type="application/rss+xml" />
-	<link>httpsmusicalcenter.net</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../</link>
 	<description></description>
-	<lastBuildDate>Thu, 03 Aug 2023 13:34:16 +0000</lastBuildDate>
+	<lastBuildDate>Thu, 03 Aug 2023 03:54:11 +0000</lastBuildDate>
 	<sy:updatePeriod>
 	hourly	</sy:updatePeriod>
 	<sy:updateFrequency>

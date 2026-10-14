@@ -468,13 +468,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 @media (max-width:767px) { .cmbb-interview .elementor-button { font-size:16px; padding:15px 18px; } }
 </style>
 <style id="cmbb-professor-name-bands">
-/* Unify the three professor captions while retaining their existing type and placement. */
+/* The existing 100px caption region supplies the same bottom fade on each portrait. */
+.fotosmsc .widget-image-caption div {
+  background:linear-gradient(to top,rgba(102,51,51,.95) 0%,rgba(102,51,51,.78) 35%,rgba(102,51,51,.35) 70%,rgba(102,51,51,0) 100%);
+  pointer-events:none;
+}
 .fotosmsc .widget-image-caption div span {
   width:100%;
   box-sizing:border-box;
-  background:rgba(102,51,51,.82);
+  background:transparent;
   color:#fff;
-  text-shadow:0 1px 2px rgba(0,0,0,.25);
+  text-shadow:0 1px 3px rgba(0,0,0,.5);
 }
 </style>
 </head>
